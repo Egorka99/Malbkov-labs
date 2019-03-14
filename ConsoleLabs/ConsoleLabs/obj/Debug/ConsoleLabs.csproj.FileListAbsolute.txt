@@ -1,0 +1,10 @@
+D:\Desktop\учеба\4 семак\ConsoleLabs\ConsoleLabs\bin\Debug\ConsoleLabs.exe.config
+D:\Desktop\учеба\4 семак\ConsoleLabs\ConsoleLabs\bin\Debug\ConsoleLabs.exe
+D:\Desktop\учеба\4 семак\ConsoleLabs\ConsoleLabs\bin\Debug\ConsoleLabs.pdb
+D:\Desktop\учеба\4 семак\ConsoleLabs\ConsoleLabs\bin\Debug\BinTree.dll
+D:\Desktop\учеба\4 семак\ConsoleLabs\ConsoleLabs\bin\Debug\BinTree.pdb
+D:\Desktop\учеба\4 семак\ConsoleLabs\ConsoleLabs\obj\Debug\ConsoleLabs.csprojAssemblyReference.cache
+D:\Desktop\учеба\4 семак\ConsoleLabs\ConsoleLabs\obj\Debug\ConsoleLabs.csproj.CoreCompileInputs.cache
+D:\Desktop\учеба\4 семак\ConsoleLabs\ConsoleLabs\obj\Debug\ConsoleLabs.csproj.CopyComplete
+D:\Desktop\учеба\4 семак\ConsoleLabs\ConsoleLabs\obj\Debug\ConsoleLabs.exe
+D:\Desktop\учеба\4 семак\ConsoleLabs\ConsoleLabs\obj\Debug\ConsoleLabs.pdb
