@@ -1,0 +1,6 @@
+C:\GitHub\Malbkov-labs\ConsoleLabs\DekstraAlgoritm\bin\Debug\DekstraAlgoritm.dll
+C:\GitHub\Malbkov-labs\ConsoleLabs\DekstraAlgoritm\bin\Debug\DekstraAlgoritm.pdb
+C:\GitHub\Malbkov-labs\ConsoleLabs\DekstraAlgoritm\obj\Debug\DekstraAlgoritm.csprojResolveAssemblyReference.cache
+C:\GitHub\Malbkov-labs\ConsoleLabs\DekstraAlgoritm\obj\Debug\DekstraAlgoritm.csproj.CoreCompileInputs.cache
+C:\GitHub\Malbkov-labs\ConsoleLabs\DekstraAlgoritm\obj\Debug\DekstraAlgoritm.dll
+C:\GitHub\Malbkov-labs\ConsoleLabs\DekstraAlgoritm\obj\Debug\DekstraAlgoritm.pdb

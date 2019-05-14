@@ -8,3 +8,17 @@ D:\Desktop\учеба\4 семак\ConsoleLabs\ConsoleLabs\obj\Debug\ConsoleLabs
 D:\Desktop\учеба\4 семак\ConsoleLabs\ConsoleLabs\obj\Debug\ConsoleLabs.csproj.CopyComplete
 D:\Desktop\учеба\4 семак\ConsoleLabs\ConsoleLabs\obj\Debug\ConsoleLabs.exe
 D:\Desktop\учеба\4 семак\ConsoleLabs\ConsoleLabs\obj\Debug\ConsoleLabs.pdb
+C:\GitHub\Malbkov-labs\ConsoleLabs\ConsoleLabs\bin\Debug\ConsoleLabs.exe.config
+C:\GitHub\Malbkov-labs\ConsoleLabs\ConsoleLabs\bin\Debug\ConsoleLabs.exe
+C:\GitHub\Malbkov-labs\ConsoleLabs\ConsoleLabs\bin\Debug\ConsoleLabs.pdb
+C:\GitHub\Malbkov-labs\ConsoleLabs\ConsoleLabs\bin\Debug\BinTree.dll
+C:\GitHub\Malbkov-labs\ConsoleLabs\ConsoleLabs\bin\Debug\BinTree.pdb
+C:\GitHub\Malbkov-labs\ConsoleLabs\ConsoleLabs\obj\Debug\ConsoleLabs.csprojResolveAssemblyReference.cache
+C:\GitHub\Malbkov-labs\ConsoleLabs\ConsoleLabs\obj\Debug\ConsoleLabs.csproj.CoreCompileInputs.cache
+C:\GitHub\Malbkov-labs\ConsoleLabs\ConsoleLabs\obj\Debug\ConsoleLabs.csproj.CopyComplete
+C:\GitHub\Malbkov-labs\ConsoleLabs\ConsoleLabs\obj\Debug\ConsoleLabs.exe
+C:\GitHub\Malbkov-labs\ConsoleLabs\ConsoleLabs\obj\Debug\ConsoleLabs.pdb
+C:\GitHub\Malbkov-labs\ConsoleLabs\ConsoleLabs\bin\Debug\Short_way.dll
+C:\GitHub\Malbkov-labs\ConsoleLabs\ConsoleLabs\bin\Debug\Short_way.pdb
+C:\GitHub\Malbkov-labs\ConsoleLabs\ConsoleLabs\bin\Debug\DekstraAlgoritm.dll
+C:\GitHub\Malbkov-labs\ConsoleLabs\ConsoleLabs\bin\Debug\DekstraAlgoritm.pdb

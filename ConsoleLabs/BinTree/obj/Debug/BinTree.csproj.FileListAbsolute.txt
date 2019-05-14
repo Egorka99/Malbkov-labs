@@ -4,3 +4,9 @@ D:\Desktop\учеба\4 семак\ConsoleLabs\BinTree\obj\Debug\BinTree.csprojA
 D:\Desktop\учеба\4 семак\ConsoleLabs\BinTree\obj\Debug\BinTree.csproj.CoreCompileInputs.cache
 D:\Desktop\учеба\4 семак\ConsoleLabs\BinTree\obj\Debug\BinTree.dll
 D:\Desktop\учеба\4 семак\ConsoleLabs\BinTree\obj\Debug\BinTree.pdb
+C:\GitHub\Malbkov-labs\ConsoleLabs\BinTree\bin\Debug\BinTree.dll
+C:\GitHub\Malbkov-labs\ConsoleLabs\BinTree\bin\Debug\BinTree.pdb
+C:\GitHub\Malbkov-labs\ConsoleLabs\BinTree\obj\Debug\BinTree.csprojResolveAssemblyReference.cache
+C:\GitHub\Malbkov-labs\ConsoleLabs\BinTree\obj\Debug\BinTree.csproj.CoreCompileInputs.cache
+C:\GitHub\Malbkov-labs\ConsoleLabs\BinTree\obj\Debug\BinTree.dll
+C:\GitHub\Malbkov-labs\ConsoleLabs\BinTree\obj\Debug\BinTree.pdb

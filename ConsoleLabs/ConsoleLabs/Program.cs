@@ -3,7 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Labs;  
+using Labs;
+using Algorithms_Library;
+using DekstraAlgoritm;
+
 
 namespace ConsoleLabs
 {
@@ -34,15 +37,94 @@ namespace ConsoleLabs
             Console.WriteLine();
             BinaryTreeExtensions.LCR(tree); 
             Console.WriteLine();
-            BinaryTreeExtensions.LRC(tree); 
+            BinaryTreeExtensions.LRC(tree);
+
+            Console.WriteLine("Press any key");
+            Console.WriteLine("---");
 
             Console.ReadKey(); 
         }
-         
+        static  void lab10()
+        {
+            Console.WriteLine("Лабораторная работа №10");
+            Console.WriteLine("---"); 
+
+            Kruskal k = new Kruskal(@"4 
+                                      6
+                                      1 2 1
+                                      2 3 6
+                                      3 4 2
+                                      4 1 5
+                                      1 3 4
+                                      2 4 3");
+
+            k.BuildSpanningTree();
+            Console.WriteLine("Cost: " + k.Cost);
+            k.DisplayInfo();
+            Console.WriteLine("---");
+            Console.WriteLine("Second var...");
+            Console.WriteLine("---");
+
+            Prim p = new Prim();
+            List<Edge_Prim> MST = new List<Edge_Prim>();
+            List<Edge_Prim> list = new List<Edge_Prim>();
+            list.Add(new Edge_Prim(1, 2, 5));
+            list.Add(new Edge_Prim(2, 3, 3));
+            list.Add(new Edge_Prim(3, 4, 4));
+            list.Add(new Edge_Prim(4, 5, 11));
+            list.Add(new Edge_Prim(5, 1, 2));
+            list.Add(new Edge_Prim(1, 3, 1));
+            p.algorithmByPrim(5, list, MST);
+            foreach (var item in MST)
+            {
+                Console.WriteLine(item.v1.ToString() + "-->" + item.v2.ToString() + "  Вес :" + item.weight.ToString());
+            }
+
+            Console.WriteLine("Press any key");
+            Console.WriteLine("---");
+            Console.ReadKey();
+        }
+        static void lab6()
+        {
+            Console.WriteLine("Лабораторная работа №6");
+            Console.WriteLine("---");
+
+            Point[] v = new Point[6];
+            v[0] = new Point(0, false, "F"); //в любой из точек меняешь значение на 0 (в остальных оставляешь 9999) (начало)
+            v[1] = new Point(9999, false, "A");
+            v[2] = new Point(9999, false, "B");
+            v[3] = new Point(9999, false, "C");
+            v[4] = new Point(9999, false, "D");
+            v[5] = new Point(9999, false, "E");
+            Rebro[] rebras = new Rebro[10];
+            rebras[0] = new Rebro(v[0], v[2], 8);
+            rebras[1] = new Rebro(v[0], v[3], 4);//FC
+            rebras[2] = new Rebro(v[0], v[1], 9);//FA
+            rebras[3] = new Rebro(v[2], v[3], 7);//bc
+            rebras[4] = new Rebro(v[2], v[5], 5);//be
+            rebras[5] = new Rebro(v[3], v[5], 5);//ce
+            rebras[6] = new Rebro(v[1], v[5], 6);//ae
+            rebras[7] = new Rebro(v[1], v[4], 5);//ad
+            rebras[8] = new Rebro(v[3], v[4], 4);//cd
+            rebras[9] = new Rebro(v[2], v[4], 7);//bd
+            DekstraAlgorim da = new DekstraAlgorim(v, rebras);
+            da.AlgoritmRun(v[0]);                                               //выбираешь в каком именно ты поставил 0 (начало)
+            List<string> b = PrintGrath.PrintAllMinPaths(da);
+            for (int i = 0; i < b.Count; i++)                                 // b.Count меняешь на цифру до которого поинта считать (конец)
+                Console.WriteLine(b[i]);
+            
+            Console.WriteLine("Press any key");
+            Console.WriteLine("---");
+            Console.ReadKey();
+        }
+
          
         static void Main(string[] args)
         {
-            Lab_12_13();  
+            lab6();
+            lab10();
+            Lab_12_13();
+            
         }  
     }
 }

@@ -1,0 +1,6 @@
+C:\GitHub\Malbkov-labs\ConsoleLabs\Short_way\obj\Debug\Short_way.csprojResolveAssemblyReference.cache
+C:\GitHub\Malbkov-labs\ConsoleLabs\Short_way\obj\Debug\Short_way.csproj.CoreCompileInputs.cache
+C:\GitHub\Malbkov-labs\ConsoleLabs\Short_way\bin\Debug\Short_way.dll
+C:\GitHub\Malbkov-labs\ConsoleLabs\Short_way\bin\Debug\Short_way.pdb
+C:\GitHub\Malbkov-labs\ConsoleLabs\Short_way\obj\Debug\Short_way.dll
+C:\GitHub\Malbkov-labs\ConsoleLabs\Short_way\obj\Debug\Short_way.pdb
