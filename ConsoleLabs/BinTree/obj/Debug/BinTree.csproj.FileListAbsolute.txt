@@ -10,3 +10,9 @@ C:\GitHub\Malbkov-labs\ConsoleLabs\BinTree\obj\Debug\BinTree.csprojResolveAssemb
 C:\GitHub\Malbkov-labs\ConsoleLabs\BinTree\obj\Debug\BinTree.csproj.CoreCompileInputs.cache
 C:\GitHub\Malbkov-labs\ConsoleLabs\BinTree\obj\Debug\BinTree.dll
 C:\GitHub\Malbkov-labs\ConsoleLabs\BinTree\obj\Debug\BinTree.pdb
+D:\MVS Project\repos\Malbkov-labs\ConsoleLabs\BinTree\bin\Debug\BinTree.dll
+D:\MVS Project\repos\Malbkov-labs\ConsoleLabs\BinTree\bin\Debug\BinTree.pdb
+D:\MVS Project\repos\Malbkov-labs\ConsoleLabs\BinTree\obj\Debug\BinTree.csprojAssemblyReference.cache
+D:\MVS Project\repos\Malbkov-labs\ConsoleLabs\BinTree\obj\Debug\BinTree.csproj.CoreCompileInputs.cache
+D:\MVS Project\repos\Malbkov-labs\ConsoleLabs\BinTree\obj\Debug\BinTree.dll
+D:\MVS Project\repos\Malbkov-labs\ConsoleLabs\BinTree\obj\Debug\BinTree.pdb

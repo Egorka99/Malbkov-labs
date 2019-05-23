@@ -4,3 +4,9 @@ C:\GitHub\Malbkov-labs\ConsoleLabs\Short_way\bin\Debug\Short_way.dll
 C:\GitHub\Malbkov-labs\ConsoleLabs\Short_way\bin\Debug\Short_way.pdb
 C:\GitHub\Malbkov-labs\ConsoleLabs\Short_way\obj\Debug\Short_way.dll
 C:\GitHub\Malbkov-labs\ConsoleLabs\Short_way\obj\Debug\Short_way.pdb
+D:\MVS Project\repos\Malbkov-labs\ConsoleLabs\Short_way\bin\Debug\Short_way.dll
+D:\MVS Project\repos\Malbkov-labs\ConsoleLabs\Short_way\bin\Debug\Short_way.pdb
+D:\MVS Project\repos\Malbkov-labs\ConsoleLabs\Short_way\obj\Debug\Short_way.csprojAssemblyReference.cache
+D:\MVS Project\repos\Malbkov-labs\ConsoleLabs\Short_way\obj\Debug\Short_way.csproj.CoreCompileInputs.cache
+D:\MVS Project\repos\Malbkov-labs\ConsoleLabs\Short_way\obj\Debug\Short_way.dll
+D:\MVS Project\repos\Malbkov-labs\ConsoleLabs\Short_way\obj\Debug\Short_way.pdb

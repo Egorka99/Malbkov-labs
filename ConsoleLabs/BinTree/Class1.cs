@@ -9,9 +9,10 @@ namespace Labs
     public enum BinSide
     {
         Left,
-        Right
+        Right 
     }
-    /// <summary>
+
+    /// <summary> 
     /// Бинарное дерево поиска
     /// </summary>
     public class BinaryTree

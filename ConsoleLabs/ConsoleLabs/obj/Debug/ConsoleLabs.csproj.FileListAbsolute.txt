@@ -22,3 +22,7 @@ C:\GitHub\Malbkov-labs\ConsoleLabs\ConsoleLabs\bin\Debug\Short_way.dll
 C:\GitHub\Malbkov-labs\ConsoleLabs\ConsoleLabs\bin\Debug\Short_way.pdb
 C:\GitHub\Malbkov-labs\ConsoleLabs\ConsoleLabs\bin\Debug\DekstraAlgoritm.dll
 C:\GitHub\Malbkov-labs\ConsoleLabs\ConsoleLabs\bin\Debug\DekstraAlgoritm.pdb
+D:\MVS Project\repos\Malbkov-labs\ConsoleLabs\ConsoleLabs\obj\Debug\ConsoleLabs.csprojAssemblyReference.cache
+D:\MVS Project\repos\Malbkov-labs\ConsoleLabs\ConsoleLabs\obj\Debug\ConsoleLabs.csproj.CoreCompileInputs.cache
+D:\MVS Project\repos\Malbkov-labs\ConsoleLabs\ConsoleLabs\obj\Debug\ConsoleLabs.exe
+D:\MVS Project\repos\Malbkov-labs\ConsoleLabs\ConsoleLabs\obj\Debug\ConsoleLabs.pdb
