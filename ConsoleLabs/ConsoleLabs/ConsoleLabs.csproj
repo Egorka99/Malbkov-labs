@@ -50,6 +50,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\AVLTree\AVLTree.csproj">
+      <Project>{fffab916-a217-4ace-aab6-225cc9a187cd}</Project>
+      <Name>AVLTree</Name>
+    </ProjectReference>
     <ProjectReference Include="..\BinTree\BinTree.csproj">
       <Project>{94651b15-a49c-463e-8e81-391b94d3ec5f}</Project>
       <Name>BinTree</Name>

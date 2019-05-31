@@ -42,7 +42,7 @@ namespace Labs
                 {
                     _left.Parent = this;  // установка указателя на родительский элемент
                 }
-            }
+            } 
         }
 
         public AVLTreeNode<TNode> Right
@@ -75,7 +75,7 @@ namespace Labs
 
         public TNode Value
         {
-            get;
+            get; 
             private set;
         }
 
@@ -364,7 +364,7 @@ namespace Labs
             //node.Balance();
         }
 
-        #endregion
+        #endregion 
 
         #region Метод Contains
 
@@ -570,7 +570,7 @@ namespace Labs
         }
 
         #endregion
-
+         
         #region Метод Clear
 
         public void Clear()
@@ -579,14 +579,14 @@ namespace Labs
             Count = 0;
         }
 
-        #endregion
+        #endregion  
 
         #region Итераторы
 
         public IEnumerator<T> InOrderTraversal()
-        {
+        { 
 
-            // рекурсивное перемищение по дереву
+            // рекурсивное перемещение по дереву
 
             if (Head != null) // существует ли корень дерева
             {
@@ -652,6 +652,36 @@ namespace Labs
 
         #endregion
 
+        public static void Print(AVLTreeNode<T> node)
+        {
+            if (node != null)
+            { 
+                if (node.Parent == null)
+                {
+                    Console.WriteLine("ROOT:{0}", node.Value);  
+                }
+                else
+                {  
+                    if (node.Parent.Left == node)
+                    {
+                        Console.WriteLine("Left for {1}  --> {0}", node.Value, node.Parent.Value);
+                    }
+
+                    if (node.Parent.Right == node)
+                    {
+                        Console.WriteLine("Right for {1} --> {0}", node.Value, node.Parent.Value);
+                    }
+                }
+                if (node.Left != null)
+                {
+                    Print(node.Left);
+                }
+                if (node.Right != null)
+                {
+                    Print(node.Right);
+                }
+            }
+        } 
 
     } 
 } 

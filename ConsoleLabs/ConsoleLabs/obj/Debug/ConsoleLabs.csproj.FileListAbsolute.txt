@@ -26,3 +26,15 @@ D:\MVS Project\repos\Malbkov-labs\ConsoleLabs\ConsoleLabs\obj\Debug\ConsoleLabs.
 D:\MVS Project\repos\Malbkov-labs\ConsoleLabs\ConsoleLabs\obj\Debug\ConsoleLabs.csproj.CoreCompileInputs.cache
 D:\MVS Project\repos\Malbkov-labs\ConsoleLabs\ConsoleLabs\obj\Debug\ConsoleLabs.exe
 D:\MVS Project\repos\Malbkov-labs\ConsoleLabs\ConsoleLabs\obj\Debug\ConsoleLabs.pdb
+D:\MVS Project\repos\Malbkov-labs\ConsoleLabs\ConsoleLabs\bin\Debug\ConsoleLabs.exe.config
+D:\MVS Project\repos\Malbkov-labs\ConsoleLabs\ConsoleLabs\bin\Debug\ConsoleLabs.exe
+D:\MVS Project\repos\Malbkov-labs\ConsoleLabs\ConsoleLabs\bin\Debug\ConsoleLabs.pdb
+D:\MVS Project\repos\Malbkov-labs\ConsoleLabs\ConsoleLabs\bin\Debug\AVLTree.dll
+D:\MVS Project\repos\Malbkov-labs\ConsoleLabs\ConsoleLabs\bin\Debug\BinTree.dll
+D:\MVS Project\repos\Malbkov-labs\ConsoleLabs\ConsoleLabs\bin\Debug\DekstraAlgoritm.dll
+D:\MVS Project\repos\Malbkov-labs\ConsoleLabs\ConsoleLabs\bin\Debug\Short_way.dll
+D:\MVS Project\repos\Malbkov-labs\ConsoleLabs\ConsoleLabs\bin\Debug\AVLTree.pdb
+D:\MVS Project\repos\Malbkov-labs\ConsoleLabs\ConsoleLabs\bin\Debug\BinTree.pdb
+D:\MVS Project\repos\Malbkov-labs\ConsoleLabs\ConsoleLabs\bin\Debug\DekstraAlgoritm.pdb
+D:\MVS Project\repos\Malbkov-labs\ConsoleLabs\ConsoleLabs\bin\Debug\Short_way.pdb
+D:\MVS Project\repos\Malbkov-labs\ConsoleLabs\ConsoleLabs\obj\Debug\ConsoleLabs.csproj.CopyComplete

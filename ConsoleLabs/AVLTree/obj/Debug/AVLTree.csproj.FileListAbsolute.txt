@@ -1,0 +1,6 @@
+D:\MVS Project\repos\Malbkov-labs\ConsoleLabs\AVLTree\bin\Debug\AVLTree.dll
+D:\MVS Project\repos\Malbkov-labs\ConsoleLabs\AVLTree\bin\Debug\AVLTree.pdb
+D:\MVS Project\repos\Malbkov-labs\ConsoleLabs\AVLTree\obj\Debug\AVLTree.csprojAssemblyReference.cache
+D:\MVS Project\repos\Malbkov-labs\ConsoleLabs\AVLTree\obj\Debug\AVLTree.csproj.CoreCompileInputs.cache
+D:\MVS Project\repos\Malbkov-labs\ConsoleLabs\AVLTree\obj\Debug\AVLTree.dll
+D:\MVS Project\repos\Malbkov-labs\ConsoleLabs\AVLTree\obj\Debug\AVLTree.pdb

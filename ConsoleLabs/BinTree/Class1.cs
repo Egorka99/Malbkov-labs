@@ -278,7 +278,7 @@ namespace Labs
         public static void CLR(BinaryTree node)
         {
             if (node == null) return; 
-            Console.Write(node.Data + " ");
+            Console.Write(node.Data + " "); 
             CLR(node.Left); 
             CLR(node.Right);  
         }
@@ -339,7 +339,7 @@ namespace Labs
                 }
                 if (node.Right != null)
                 {
-                    Print(node.Right);
+                    Print(node.Right); 
                 }
             }
         }

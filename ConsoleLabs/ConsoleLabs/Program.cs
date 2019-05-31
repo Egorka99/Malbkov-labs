@@ -6,14 +6,30 @@ using System.Threading.Tasks;
 using Labs;
 using Algorithms_Library;
 using DekstraAlgoritm; 
-
- 
-namespace ConsoleLabs
+   
+namespace ConsoleLabs 
 {
-    class Program 
+    class Program   
     {
-        static void Lab_15()
-        {
+
+        static void Lab_16()
+        {  
+           const int Degree = 2; // максимальное число потомков узла 
+
+           int[] testKeyData = new int[] { 10, 20, 30, 50 };  // ключи
+           int[] testPointerData = new int[] { 50, 60, 40, 20 }; // указатели??
+
+            var btree = new BTree<int, int>(Degree); // дерево со ст. 2 
+
+            Node<int, int> root = btree.Root; // корень      
+
+            for (int i = 0; i < testKeyData.Length; i++)
+            {
+                InsertTestDataAndValidateTree(btree, i);
+            } 
+        }
+        static void Lab_15()  
+        { 
              
             AVLTree<int> Oak = new AVLTree<int>();
             //                                           10                              10                                             
@@ -25,14 +41,11 @@ namespace ConsoleLabs
             Oak.Add(15);  //                                      \              
             Oak.Add(11);  //                                       25
             Oak.Add(25);  //
-
+              
             Oak.Remove(11);
+               
+            AVLTree<int>.Print(Oak.Head);   //печатаем измененное дерево 
              
-            foreach (var item in Oak)
-            { 
-                Console.WriteLine(item); 
-            }
-
             Console.ReadKey();
         }
 
@@ -145,10 +158,11 @@ namespace ConsoleLabs
          
         static void Main(string[] args)
         {
-            lab6();
-            lab10();
-            Lab_12_13();
-            
+            Lab_15();   
+            //lab6(); 
+            //lab10();
+           // Lab_12_13();
+             
         }  
     }
 }
