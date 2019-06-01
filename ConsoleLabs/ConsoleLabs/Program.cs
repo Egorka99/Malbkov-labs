@@ -5,16 +5,50 @@ using System.Text;
 using System.Threading.Tasks;
 using Labs;
 using Algorithms_Library;
-using DekstraAlgoritm; 
+using DekstraAlgoritm;
+using System.IO; 
    
 namespace ConsoleLabs 
 {
-    class Program     
+    class Program      
     {
+
+        static void Lab_2_7()  
+        {    
+
+            //try 
+            //{
+            StreamReader sr = new StreamReader("input.txt");
+             
+            Graph graph = new Graph(sr);
+         
+                Console.WriteLine();
+             
+                graph.PrintAdjacencyMatrix(); 
+             
+                graph.PrintDistanceMatrix_FU(); 
+
+                graph.PrintDFS();   
+                   
+                Console.ReadKey(); 
+            //}
+            //catch (IndexOutOfRangeException) 
+            //{
+            //    Console.WriteLine("Файл содержит неверные данные");
+            //    Console.ReadKey();
+            //} 
+            //catch (Exception ex)
+            //{
+            //    Console.WriteLine(ex.Message);
+            //    Console.ReadKey();
+            //}
+  
+        }
+
 
         static void Lab_16() 
         {  
- 
+  
         } 
         static void Lab_15()   
         { 
@@ -36,7 +70,7 @@ namespace ConsoleLabs
              
             Console.ReadKey();
         }
-
+         
         static void Lab_12_13()
         {
             Console.WriteLine("Лабораторная работа №13");
@@ -146,8 +180,9 @@ namespace ConsoleLabs
          
         static void Main(string[] args)
         {
-            Lab_15();   
-            //lab6(); 
+            Lab_2_7(); 
+            //Lab_15();   
+            //lab6();  
             //lab10();
            // Lab_12_13();
              
