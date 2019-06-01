@@ -4,22 +4,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Diagnostics;
- 
-namespace Labs 
+
+namespace Labs
 {
- 
+     
 
     /// <summary>
     /// Based on BTree chapter in "Introduction to Algorithms", by Thomas Cormen, Charles Leiserson, Ronald Rivest.
     /// 
     /// This implementation is not thread-safe, and user must handle thread-safety.
     /// </summary>
-    /// <typeparam name="TK">Type of BTree Key.</typeparam>
+    /// <typeparam name="TK">Type of BTree Key.</typeparam> 
     /// <typeparam name="TP">Type of BTree Pointer associated with each Key.</typeparam>
     public class BTree<TK, TP> where TK : IComparable<TK>
     {
-        public BTree(int degree) 
-        { 
+        public BTree(int degree)
+        {
             if (degree < 2)
             {
                 throw new ArgumentException("BTree degree must be at least 2", "degree");
@@ -291,7 +291,7 @@ namespace Labs
         private Entry<TK, TP> SearchInternal(Node<TK, TP> node, TK key)
         {
             int i = node.Entries.TakeWhile(entry => key.CompareTo(entry.Key) > 0).Count();
-
+             
             if (i < node.Entries.Count && node.Entries[i].Key.CompareTo(key) == 0)
             {
                 return node.Entries[i];
@@ -351,3 +351,4 @@ namespace Labs
         }
     }
 }
+ 

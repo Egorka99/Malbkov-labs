@@ -9,26 +9,14 @@ using DekstraAlgoritm;
    
 namespace ConsoleLabs 
 {
-    class Program   
+    class Program     
     {
 
-        static void Lab_16()
+        static void Lab_16() 
         {  
-           const int Degree = 2; // максимальное число потомков узла 
-
-           int[] testKeyData = new int[] { 10, 20, 30, 50 };  // ключи
-           int[] testPointerData = new int[] { 50, 60, 40, 20 }; // указатели??
-
-            var btree = new BTree<int, int>(Degree); // дерево со ст. 2 
-
-            Node<int, int> root = btree.Root; // корень      
-
-            for (int i = 0; i < testKeyData.Length; i++)
-            {
-                InsertTestDataAndValidateTree(btree, i);
-            } 
-        }
-        static void Lab_15()  
+ 
+        } 
+        static void Lab_15()   
         { 
              
             AVLTree<int> Oak = new AVLTree<int>();

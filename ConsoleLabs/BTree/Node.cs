@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Labs 
-{
+namespace Labs
+{ 
     public class Node<TK, TP>
     {
         private int degree;
-
+         
         public Node(int degree)
         {
             this.degree = degree;
@@ -44,5 +44,5 @@ namespace Labs
                 return this.Entries.Count == this.degree - 1;
             }
         }
-    } 
+    }
 }

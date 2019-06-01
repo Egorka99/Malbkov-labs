@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28010.2036
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28922.388
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleLabs", "ConsoleLabs\ConsoleLabs.csproj", "{2F342DB6-FDE8-40E8-B1A2-8CD5E3A5C61C}"
 EndProject
@@ -12,6 +12,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DekstraAlgoritm", "DekstraAlgoritm\DekstraAlgoritm.csproj", "{68529A6F-77F2-487C-BD4C-8432F85CF31F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AVLTree", "AVLTree\AVLTree.csproj", "{FFFAB916-A217-4ACE-AAB6-225CC9A187CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTree", "BTree\BTree.csproj", "{A884A9EC-04F9-4F85-AE49-0FF802FC80E7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{FFFAB916-A217-4ACE-AAB6-225CC9A187CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FFFAB916-A217-4ACE-AAB6-225CC9A187CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FFFAB916-A217-4ACE-AAB6-225CC9A187CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A884A9EC-04F9-4F85-AE49-0FF802FC80E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A884A9EC-04F9-4F85-AE49-0FF802FC80E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A884A9EC-04F9-4F85-AE49-0FF802FC80E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A884A9EC-04F9-4F85-AE49-0FF802FC80E7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

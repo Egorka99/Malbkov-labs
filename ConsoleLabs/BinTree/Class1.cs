@@ -38,7 +38,7 @@ namespace Labs
             if (Data > data)
             {
                 if (Left == null) Left = new BinaryTree();
-                Insert(data, Left, this);
+                Insert(data, Left, this);  
             }
             else
             {

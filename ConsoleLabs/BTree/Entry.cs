@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Labs 
+namespace Labs
 {
     public class Entry<TK, TP> : IEquatable<Entry<TK, TP>>
     {
@@ -16,5 +16,6 @@ namespace Labs
         {
             return this.Key.Equals(other.Key) && this.Pointer.Equals(other.Pointer);
         }
-    } 
+    }
 }
+ 

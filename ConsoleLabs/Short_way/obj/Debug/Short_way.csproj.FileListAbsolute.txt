@@ -10,3 +10,5 @@ D:\MVS Project\repos\Malbkov-labs\ConsoleLabs\Short_way\obj\Debug\Short_way.cspr
 D:\MVS Project\repos\Malbkov-labs\ConsoleLabs\Short_way\obj\Debug\Short_way.csproj.CoreCompileInputs.cache
 D:\MVS Project\repos\Malbkov-labs\ConsoleLabs\Short_way\obj\Debug\Short_way.dll
 D:\MVS Project\repos\Malbkov-labs\ConsoleLabs\Short_way\obj\Debug\Short_way.pdb
+D:\Study\MVS Projects\Malbkov-labs\ConsoleLabs\Short_way\obj\Debug\Short_way.dll
+D:\Study\MVS Projects\Malbkov-labs\ConsoleLabs\Short_way\obj\Debug\Short_way.pdb

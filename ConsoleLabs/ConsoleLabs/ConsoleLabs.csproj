@@ -8,10 +8,11 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>ConsoleLabs</RootNamespace>
     <AssemblyName>ConsoleLabs</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -57,6 +58,10 @@
     <ProjectReference Include="..\BinTree\BinTree.csproj">
       <Project>{94651b15-a49c-463e-8e81-391b94d3ec5f}</Project>
       <Name>BinTree</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BTree\BTree.csproj">
+      <Project>{a884a9ec-04f9-4f85-ae49-0ff802fc80e7}</Project>
+      <Name>BTree</Name>
     </ProjectReference>
     <ProjectReference Include="..\DekstraAlgoritm\DekstraAlgoritm.csproj">
       <Project>{68529a6f-77f2-487c-bd4c-8432f85cf31f}</Project>

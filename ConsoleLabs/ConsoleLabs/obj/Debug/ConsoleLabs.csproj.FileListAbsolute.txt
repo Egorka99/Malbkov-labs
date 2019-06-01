@@ -38,3 +38,5 @@ D:\MVS Project\repos\Malbkov-labs\ConsoleLabs\ConsoleLabs\bin\Debug\BinTree.pdb
 D:\MVS Project\repos\Malbkov-labs\ConsoleLabs\ConsoleLabs\bin\Debug\DekstraAlgoritm.pdb
 D:\MVS Project\repos\Malbkov-labs\ConsoleLabs\ConsoleLabs\bin\Debug\Short_way.pdb
 D:\MVS Project\repos\Malbkov-labs\ConsoleLabs\ConsoleLabs\obj\Debug\ConsoleLabs.csproj.CopyComplete
+D:\Study\MVS Projects\Malbkov-labs\ConsoleLabs\ConsoleLabs\obj\Debug\ConsoleLabs.exe
+D:\Study\MVS Projects\Malbkov-labs\ConsoleLabs\ConsoleLabs\obj\Debug\ConsoleLabs.pdb

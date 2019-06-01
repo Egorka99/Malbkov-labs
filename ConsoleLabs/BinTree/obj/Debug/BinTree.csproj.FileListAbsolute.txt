@@ -16,3 +16,5 @@ D:\MVS Project\repos\Malbkov-labs\ConsoleLabs\BinTree\obj\Debug\BinTree.csprojAs
 D:\MVS Project\repos\Malbkov-labs\ConsoleLabs\BinTree\obj\Debug\BinTree.csproj.CoreCompileInputs.cache
 D:\MVS Project\repos\Malbkov-labs\ConsoleLabs\BinTree\obj\Debug\BinTree.dll
 D:\MVS Project\repos\Malbkov-labs\ConsoleLabs\BinTree\obj\Debug\BinTree.pdb
+D:\Study\MVS Projects\Malbkov-labs\ConsoleLabs\BinTree\obj\Debug\BinTree.dll
+D:\Study\MVS Projects\Malbkov-labs\ConsoleLabs\BinTree\obj\Debug\BinTree.pdb
