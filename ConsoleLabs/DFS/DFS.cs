@@ -69,13 +69,17 @@ namespace Labs
             num = new int[MatrixSize];
             count = 0; 
         }
-         
-        private void DFS(int st, int numb) //процедура поиска в глубину 
+
+        /// <summary>
+        /// Процедура поиска в глубину  
+        /// </summary>
+        /// <param name="st">Стартовая вершина</param>
+        /// <param name="numb">Компонента связности</param>
+        private void DFS(int st, int numb) 
         {
-            visited[st] = true;
+            visited[st] = true; 
 
             for (int r = 0; r < MatrixSize; r++)
-
             {
                 if ((AdjacencyMatrix[st, r] != 0) && (!visited[r]))
                 {

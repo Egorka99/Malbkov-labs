@@ -18,7 +18,7 @@ namespace Labs
         }
 
         public List<Node<TK, TP>> Children { get; set; }
-
+         
         public List<Entry<TK, TP>> Entries { get; set; }
 
         public bool IsLeaf

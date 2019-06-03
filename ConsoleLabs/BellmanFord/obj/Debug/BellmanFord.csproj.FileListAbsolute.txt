@@ -1,0 +1,6 @@
+D:\Study\MVS Projects\Malbkov-labs\ConsoleLabs\BellmanFord\bin\Debug\BellmanFord.dll
+D:\Study\MVS Projects\Malbkov-labs\ConsoleLabs\BellmanFord\bin\Debug\BellmanFord.pdb
+D:\Study\MVS Projects\Malbkov-labs\ConsoleLabs\BellmanFord\obj\Debug\BellmanFord.csprojAssemblyReference.cache
+D:\Study\MVS Projects\Malbkov-labs\ConsoleLabs\BellmanFord\obj\Debug\BellmanFord.csproj.CoreCompileInputs.cache
+D:\Study\MVS Projects\Malbkov-labs\ConsoleLabs\BellmanFord\obj\Debug\BellmanFord.dll
+D:\Study\MVS Projects\Malbkov-labs\ConsoleLabs\BellmanFord\obj\Debug\BellmanFord.pdb

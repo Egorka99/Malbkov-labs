@@ -58,3 +58,5 @@ D:\Study\MVS Projects\Malbkov-labs\ConsoleLabs\ConsoleLabs\bin\Debug\Short_way.p
 D:\Study\MVS Projects\Malbkov-labs\ConsoleLabs\ConsoleLabs\obj\Debug\ConsoleLabs.csprojAssemblyReference.cache
 D:\Study\MVS Projects\Malbkov-labs\ConsoleLabs\ConsoleLabs\obj\Debug\ConsoleLabs.csproj.CoreCompileInputs.cache
 D:\Study\MVS Projects\Malbkov-labs\ConsoleLabs\ConsoleLabs\obj\Debug\ConsoleLabs.csproj.CopyComplete
+D:\Study\MVS Projects\Malbkov-labs\ConsoleLabs\ConsoleLabs\bin\Debug\BellmanFord.dll
+D:\Study\MVS Projects\Malbkov-labs\ConsoleLabs\ConsoleLabs\bin\Debug\BellmanFord.pdb

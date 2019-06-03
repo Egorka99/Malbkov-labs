@@ -55,6 +55,10 @@
       <Project>{fffab916-a217-4ace-aab6-225cc9a187cd}</Project>
       <Name>AVLTree</Name>
     </ProjectReference>
+    <ProjectReference Include="..\BellmanFord\BellmanFord.csproj">
+      <Project>{4c17cc73-4d79-44d2-aee1-a3696d996018}</Project>
+      <Name>BellmanFord</Name>
+    </ProjectReference>
     <ProjectReference Include="..\BinTree\BinTree.csproj">
       <Project>{94651b15-a49c-463e-8e81-391b94d3ec5f}</Project>
       <Name>BinTree</Name>
@@ -67,9 +71,9 @@
       <Project>{68529a6f-77f2-487c-bd4c-8432f85cf31f}</Project>
       <Name>DekstraAlgoritm</Name>
     </ProjectReference>
-    <ProjectReference Include="..\DFS\DFS.csproj">
+    <ProjectReference Include="..\DFS\DFS_FU.csproj">
       <Project>{57a84cd1-dc28-483a-a687-a98680a433bf}</Project>
-      <Name>DFS</Name>
+      <Name>DFS_FU</Name>
     </ProjectReference>
     <ProjectReference Include="..\Short_way\Short_way.csproj">
       <Project>{2f55a6d3-8712-44b4-93ce-55615a1e0c5c}</Project>
