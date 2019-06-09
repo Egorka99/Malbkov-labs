@@ -1,0 +1,34 @@
+C:\Users\Егор\Desktop\Malbkov_fourth_term-master\Algorithms\Minimum_spanning_tree\GraphicInterface\bin\Debug\GraphicInterface.exe.config
+C:\Users\Егор\Desktop\Malbkov_fourth_term-master\Algorithms\Minimum_spanning_tree\GraphicInterface\bin\Debug\GraphicInterface.exe
+C:\Users\Егор\Desktop\Malbkov_fourth_term-master\Algorithms\Minimum_spanning_tree\GraphicInterface\bin\Debug\GraphicInterface.pdb
+C:\Users\Егор\Desktop\Malbkov_fourth_term-master\Algorithms\Minimum_spanning_tree\GraphicInterface\bin\Debug\Algorithms_Library.dll
+C:\Users\Егор\Desktop\Malbkov_fourth_term-master\Algorithms\Minimum_spanning_tree\GraphicInterface\bin\Debug\Algorithms_Library.pdb
+C:\Users\Егор\Desktop\Malbkov_fourth_term-master\Algorithms\Minimum_spanning_tree\GraphicInterface\obj\Debug\GraphicInterface.csprojAssemblyReference.cache
+C:\Users\Егор\Desktop\Malbkov_fourth_term-master\Algorithms\Minimum_spanning_tree\GraphicInterface\obj\Debug\GraphicInterface.AddGraf.resources
+C:\Users\Егор\Desktop\Malbkov_fourth_term-master\Algorithms\Minimum_spanning_tree\GraphicInterface\obj\Debug\GraphicInterface.DrawGraphForm.resources
+C:\Users\Егор\Desktop\Malbkov_fourth_term-master\Algorithms\Minimum_spanning_tree\GraphicInterface\obj\Debug\GraphicInterface.Main.resources
+C:\Users\Егор\Desktop\Malbkov_fourth_term-master\Algorithms\Minimum_spanning_tree\GraphicInterface\obj\Debug\GraphicInterface.Properties.Resources.resources
+C:\Users\Егор\Desktop\Malbkov_fourth_term-master\Algorithms\Minimum_spanning_tree\GraphicInterface\obj\Debug\GraphicInterface.csproj.GenerateResource.cache
+C:\Users\Егор\Desktop\Malbkov_fourth_term-master\Algorithms\Minimum_spanning_tree\GraphicInterface\obj\Debug\GraphicInterface.csproj.CoreCompileInputs.cache
+C:\Users\Егор\Desktop\Malbkov_fourth_term-master\Algorithms\Minimum_spanning_tree\GraphicInterface\obj\Debug\GraphicInterface.csproj.CopyComplete
+C:\Users\Егор\Desktop\Malbkov_fourth_term-master\Algorithms\Minimum_spanning_tree\GraphicInterface\obj\Debug\GraphicInterface.exe
+C:\Users\Егор\Desktop\Malbkov_fourth_term-master\Algorithms\Minimum_spanning_tree\GraphicInterface\obj\Debug\GraphicInterface.pdb
+D:\Study\MVS Projects\Malbkov-labs\Графы\GraphicInterface\bin\Debug\GraphicInterface.exe.config
+D:\Study\MVS Projects\Malbkov-labs\Графы\GraphicInterface\bin\Debug\GraphicInterface.exe
+D:\Study\MVS Projects\Malbkov-labs\Графы\GraphicInterface\bin\Debug\GraphicInterface.pdb
+D:\Study\MVS Projects\Malbkov-labs\Графы\GraphicInterface\bin\Debug\Algorithms_Library.dll
+D:\Study\MVS Projects\Malbkov-labs\Графы\GraphicInterface\bin\Debug\Algorithms_Library.pdb
+D:\Study\MVS Projects\Malbkov-labs\Графы\GraphicInterface\obj\Debug\GraphicInterface.csprojAssemblyReference.cache
+D:\Study\MVS Projects\Malbkov-labs\Графы\GraphicInterface\obj\Debug\GraphicInterface.DrawGraphForm.resources
+D:\Study\MVS Projects\Malbkov-labs\Графы\GraphicInterface\obj\Debug\GraphicInterface.Properties.Resources.resources
+D:\Study\MVS Projects\Malbkov-labs\Графы\GraphicInterface\obj\Debug\GraphicInterface.csproj.GenerateResource.cache
+D:\Study\MVS Projects\Malbkov-labs\Графы\GraphicInterface\obj\Debug\GraphicInterface.csproj.CoreCompileInputs.cache
+D:\Study\MVS Projects\Malbkov-labs\Графы\GraphicInterface\obj\Debug\GraphicInterface.csproj.CopyComplete
+D:\Study\MVS Projects\Malbkov-labs\Графы\GraphicInterface\obj\Debug\GraphicInterface.exe
+D:\Study\MVS Projects\Malbkov-labs\Графы\GraphicInterface\obj\Debug\GraphicInterface.pdb
+D:\Study\MVS Projects\Malbkov-labs\Графы\GraphicInterface\bin\Debug\DekstraAlgoritm.dll
+D:\Study\MVS Projects\Malbkov-labs\Графы\GraphicInterface\bin\Debug\DFS.dll
+D:\Study\MVS Projects\Malbkov-labs\Графы\GraphicInterface\bin\Debug\DekstraAlgoritm.pdb
+D:\Study\MVS Projects\Malbkov-labs\Графы\GraphicInterface\bin\Debug\DFS.pdb
+D:\Study\MVS Projects\Malbkov-labs\Графы\GraphicInterface\bin\Debug\BellmannFord_DFS.dll
+D:\Study\MVS Projects\Malbkov-labs\Графы\GraphicInterface\bin\Debug\BellmannFord_DFS.pdb

@@ -1,0 +1,10 @@
+C:\Users\Егор\Desktop\Malbkov_fourth_term-master\Algorithms\Minimum_spanning_tree\Minimum_spanning_tree\bin\Debug\Minimum_spanning_tree.exe.config
+C:\Users\Егор\Desktop\Malbkov_fourth_term-master\Algorithms\Minimum_spanning_tree\Minimum_spanning_tree\bin\Debug\Minimum_spanning_tree.exe
+C:\Users\Егор\Desktop\Malbkov_fourth_term-master\Algorithms\Minimum_spanning_tree\Minimum_spanning_tree\bin\Debug\Minimum_spanning_tree.pdb
+C:\Users\Егор\Desktop\Malbkov_fourth_term-master\Algorithms\Minimum_spanning_tree\Minimum_spanning_tree\bin\Debug\Algorithms_Library.dll
+C:\Users\Егор\Desktop\Malbkov_fourth_term-master\Algorithms\Minimum_spanning_tree\Minimum_spanning_tree\bin\Debug\Algorithms_Library.pdb
+C:\Users\Егор\Desktop\Malbkov_fourth_term-master\Algorithms\Minimum_spanning_tree\Minimum_spanning_tree\obj\Debug\Minimum_spanning_tree.csprojAssemblyReference.cache
+C:\Users\Егор\Desktop\Malbkov_fourth_term-master\Algorithms\Minimum_spanning_tree\Minimum_spanning_tree\obj\Debug\Minimum_spanning_tree.csproj.CoreCompileInputs.cache
+C:\Users\Егор\Desktop\Malbkov_fourth_term-master\Algorithms\Minimum_spanning_tree\Minimum_spanning_tree\obj\Debug\Minimum_spanning_tree.csproj.CopyComplete
+C:\Users\Егор\Desktop\Malbkov_fourth_term-master\Algorithms\Minimum_spanning_tree\Minimum_spanning_tree\obj\Debug\Minimum_spanning_tree.exe
+C:\Users\Егор\Desktop\Malbkov_fourth_term-master\Algorithms\Minimum_spanning_tree\Minimum_spanning_tree\obj\Debug\Minimum_spanning_tree.pdb

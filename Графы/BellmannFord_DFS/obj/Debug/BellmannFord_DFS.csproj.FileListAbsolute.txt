@@ -1,0 +1,5 @@
+D:\Study\MVS Projects\Malbkov-labs\Графы\BellmannFord_DFS\bin\Debug\BellmannFord_DFS.dll
+D:\Study\MVS Projects\Malbkov-labs\Графы\BellmannFord_DFS\bin\Debug\BellmannFord_DFS.pdb
+D:\Study\MVS Projects\Malbkov-labs\Графы\BellmannFord_DFS\obj\Debug\BellmannFord_DFS.csproj.CoreCompileInputs.cache
+D:\Study\MVS Projects\Malbkov-labs\Графы\BellmannFord_DFS\obj\Debug\BellmannFord_DFS.dll
+D:\Study\MVS Projects\Malbkov-labs\Графы\BellmannFord_DFS\obj\Debug\BellmannFord_DFS.pdb

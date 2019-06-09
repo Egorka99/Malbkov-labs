@@ -17,7 +17,7 @@ namespace Algorithms_Library
         /// Вес
         /// </summary>
         public int weight;
-
+         
         /// <summary>
         /// Коструктор
         /// </summary>

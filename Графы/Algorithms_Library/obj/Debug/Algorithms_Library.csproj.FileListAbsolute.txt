@@ -1,0 +1,6 @@
+C:\Users\Егор\Desktop\Malbkov_fourth_term-master\Algorithms\Minimum_spanning_tree\Algorithms_Library\bin\Debug\Algorithms_Library.dll
+C:\Users\Егор\Desktop\Malbkov_fourth_term-master\Algorithms\Minimum_spanning_tree\Algorithms_Library\bin\Debug\Algorithms_Library.pdb
+C:\Users\Егор\Desktop\Malbkov_fourth_term-master\Algorithms\Minimum_spanning_tree\Algorithms_Library\obj\Debug\Algorithms_Library.csprojAssemblyReference.cache
+C:\Users\Егор\Desktop\Malbkov_fourth_term-master\Algorithms\Minimum_spanning_tree\Algorithms_Library\obj\Debug\Algorithms_Library.csproj.CoreCompileInputs.cache
+C:\Users\Егор\Desktop\Malbkov_fourth_term-master\Algorithms\Minimum_spanning_tree\Algorithms_Library\obj\Debug\Algorithms_Library.dll
+C:\Users\Егор\Desktop\Malbkov_fourth_term-master\Algorithms\Minimum_spanning_tree\Algorithms_Library\obj\Debug\Algorithms_Library.pdb

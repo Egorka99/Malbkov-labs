@@ -77,7 +77,7 @@ namespace Labs
         /// <param name="numb">Компонента связности</param>
         private void DFS(int st, int numb) 
         {
-            visited[st] = true; 
+            visited[st] = true;  
 
             for (int r = 0; r < MatrixSize; r++)
             {
@@ -86,7 +86,7 @@ namespace Labs
                     DFS(r, numb);
                 }
             }  
-        } 
+        }  
 
         public void PrintDFS()
         {
@@ -99,8 +99,8 @@ namespace Labs
                     if (!visited[i])
                     {
                         DFS(i, numb + 1);
-                        numb++;
-                        count++;
+                        numb++; 
+                        count++;  
 
                     }
                     num[i] = numb;
@@ -185,7 +185,7 @@ namespace Labs
                 for (int j = 0; j < MatrixSize; ++j)
                 {
                     if (j == 0)
-                    {
+                    { 
                         Console.Write(i + 1);
 
                     }
