@@ -48,14 +48,17 @@
             this.panelDFS = new System.Windows.Forms.Panel();
             this.buttonDFS = new System.Windows.Forms.Button();
             this.panelCycles = new System.Windows.Forms.Panel();
-            this.buttonEuler = new System.Windows.Forms.Button();
             this.buttonGamilton = new System.Windows.Forms.Button();
+            this.buttonEuler = new System.Windows.Forms.Button();
+            this.panelDijktra = new System.Windows.Forms.Panel();
+            this.buttonDijkstra = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.sheet)).BeginInit();
             this.panelKruskal.SuspendLayout();
             this.panelPrim.SuspendLayout();
             this.panelBF.SuspendLayout();
             this.panelDFS.SuspendLayout();
             this.panelCycles.SuspendLayout();
+            this.panelDijktra.SuspendLayout();
             this.SuspendLayout();
             // 
             // sheet
@@ -157,8 +160,9 @@
             "Алгоритм Прима",
             "Алгоритм Беллмана-Форда",
             "Алгоритм Флойда-Уоршелла",
-            "Поиск в глубину(DFS)",
-            "Циклы в графах"});
+            "Поиск в глубину (DFS)",
+            "Циклы в графах",
+            "Алгоритм Дейкстры"});
             this.comboBox1.Location = new System.Drawing.Point(153, 514);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(244, 21);
@@ -260,16 +264,6 @@
             this.panelCycles.TabIndex = 17;
             this.panelCycles.Visible = false;
             // 
-            // buttonEuler
-            // 
-            this.buttonEuler.Location = new System.Drawing.Point(39, 23);
-            this.buttonEuler.Name = "buttonEuler";
-            this.buttonEuler.Size = new System.Drawing.Size(118, 49);
-            this.buttonEuler.TabIndex = 0;
-            this.buttonEuler.Text = "Эйлеров цикл";
-            this.buttonEuler.UseVisualStyleBackColor = true;
-            this.buttonEuler.Click += new System.EventHandler(this.ButtonEuler_Click);
-            // 
             // buttonGamilton
             // 
             this.buttonGamilton.Location = new System.Drawing.Point(219, 23);
@@ -280,11 +274,41 @@
             this.buttonGamilton.UseVisualStyleBackColor = true;
             this.buttonGamilton.Click += new System.EventHandler(this.ButtonGamilton_Click);
             // 
+            // buttonEuler
+            // 
+            this.buttonEuler.Location = new System.Drawing.Point(39, 23);
+            this.buttonEuler.Name = "buttonEuler";
+            this.buttonEuler.Size = new System.Drawing.Size(118, 49);
+            this.buttonEuler.TabIndex = 0;
+            this.buttonEuler.Text = "Эйлеров цикл";
+            this.buttonEuler.UseVisualStyleBackColor = true;
+            this.buttonEuler.Click += new System.EventHandler(this.ButtonEuler_Click);
+            // 
+            // panelDijktra
+            // 
+            this.panelDijktra.Controls.Add(this.buttonDijkstra);
+            this.panelDijktra.Location = new System.Drawing.Point(41, 545);
+            this.panelDijktra.Name = "panelDijktra";
+            this.panelDijktra.Size = new System.Drawing.Size(379, 100);
+            this.panelDijktra.TabIndex = 18;
+            this.panelDijktra.Visible = false;
+            // 
+            // buttonDijkstra
+            // 
+            this.buttonDijkstra.Location = new System.Drawing.Point(105, 16);
+            this.buttonDijkstra.Name = "buttonDijkstra";
+            this.buttonDijkstra.Size = new System.Drawing.Size(167, 65);
+            this.buttonDijkstra.TabIndex = 0;
+            this.buttonDijkstra.Text = "Кратчайшие пути от одной из вершин графа до всех остальных";
+            this.buttonDijkstra.UseVisualStyleBackColor = true;
+            this.buttonDijkstra.Click += new System.EventHandler(this.ButtonDijkstra_Click);
+            // 
             // DrawGraphForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(964, 746);
+            this.Controls.Add(this.panelDijktra);
             this.Controls.Add(this.panelCycles);
             this.Controls.Add(this.panelDFS);
             this.Controls.Add(this.panelBF);
@@ -307,6 +331,7 @@
             this.panelBF.ResumeLayout(false);
             this.panelDFS.ResumeLayout(false);
             this.panelCycles.ResumeLayout(false);
+            this.panelDijktra.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -336,5 +361,7 @@
         private System.Windows.Forms.Panel panelCycles;
         private System.Windows.Forms.Button buttonGamilton;
         private System.Windows.Forms.Button buttonEuler;
+        private System.Windows.Forms.Panel panelDijktra;
+        private System.Windows.Forms.Button buttonDijkstra;
     }
 }

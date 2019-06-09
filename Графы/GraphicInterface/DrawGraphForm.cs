@@ -364,10 +364,11 @@ namespace GraphicInterface
             panelPrim.Visible = false;
             panelBF.Visible = false;
             panelDFS.Visible = false; 
-            panelCycles.Visible = false; 
+            panelCycles.Visible = false;
+            panelDijktra.Visible = false; 
       
         }   
-         
+          
         private void ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             AllPanelClose(); //закрываем все панели с кнопками для алгоритмов
@@ -378,12 +379,12 @@ namespace GraphicInterface
             {
                 case 0: 
                     panelKruskal.Show(); 
-                    break; 
+                    break;  
                 case 1: 
                     panelPrim.Show();
                     break;
                 case 2: 
-                    panelBF.Show();
+                    panelBF.Show(); 
                     break; 
                 case 4: 
                     panelDFS.Show();
@@ -391,6 +392,9 @@ namespace GraphicInterface
                 case 5: 
                     panelCycles.Show();
                     break;
+                case 6:
+                    panelDijktra.Show();
+                    break; 
             }  
                
               
@@ -495,6 +499,12 @@ namespace GraphicInterface
             }
             else listBox1.Items.Add("Гамильтонов цикл в данном случае невозможен");
 
-        }  
+        }
+
+        private void ButtonDijkstra_Click(object sender, EventArgs e)
+        {
+            //делай тута, библа в проекте
+        }
     }  
 } 
+ 
