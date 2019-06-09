@@ -7,8 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Algorithms_Library; 
+using Algorithms_Library;
+using DekstraAlgoritm;
 using Labs;
+
 
 namespace GraphicInterface
 {
@@ -504,6 +506,28 @@ namespace GraphicInterface
         private void ButtonDijkstra_Click(object sender, EventArgs e)
         {
             //делай тута, библа в проекте
+            DekstraAlgoritm.Point[] v = new DekstraAlgoritm.Point[V.Count];
+            v[0] = new DekstraAlgoritm.Point(0, false, "0");
+            for (int i = 1; i < V.Count; i++)
+            {
+                v[i] = new DekstraAlgoritm.Point(9999, false, Convert.ToString(i));
+
+            }
+            Rebro[] rebras = new Rebro[E.Count];
+
+            rebras[0] = new Rebro((new DekstraAlgoritm.Point(0, false, Convert.ToString(E[0].v1))), (new DekstraAlgoritm.Point(9999, false, Convert.ToString(E[0].v2))), E[0].weight);
+
+            for (int i = 1; i < E.Count; i++)
+            {
+                rebras[i] = new Rebro((new DekstraAlgoritm.Point(9999, false, Convert.ToString(E[i].v1))), (new DekstraAlgoritm.Point(9999, false, Convert.ToString(E[i].v2))), E[i].weight);
+            }
+
+            DekstraAlgorim da = new DekstraAlgorim(v, rebras);
+            da.AlgoritmRun(v[0]);
+            List<string> b = PrintGrath.PrintAllMinPaths(da);//ошибка с печатью потом пофикшу
+            for (int i = 0; i < b.Count; i++)                                 // b.Count меняешь на цифру до которого поинта считать (конец)
+                listBox1.Items.Add(b[i]);
+
         }
     }  
 } 

@@ -34,3 +34,24 @@ D:\Study\MVS Projects\Malbkov-labs\Графы\GraphicInterface\bin\Debug\Bellman
 D:\Study\MVS Projects\Malbkov-labs\Графы\GraphicInterface\bin\Debug\BellmannFord_DFS.pdb
 D:\Study\MVS Projects\Malbkov-labs\Графы\GraphicInterface\bin\Debug\Cycles.dll
 D:\Study\MVS Projects\Malbkov-labs\Графы\GraphicInterface\bin\Debug\Cycles.pdb
+D:\GitHub\Malbkov-labs\Графы\GraphicInterface\bin\Debug\GraphicInterface.exe.config
+D:\GitHub\Malbkov-labs\Графы\GraphicInterface\bin\Debug\GraphicInterface.exe
+D:\GitHub\Malbkov-labs\Графы\GraphicInterface\bin\Debug\GraphicInterface.pdb
+D:\GitHub\Malbkov-labs\Графы\GraphicInterface\bin\Debug\Algorithms_Library.dll
+D:\GitHub\Malbkov-labs\Графы\GraphicInterface\bin\Debug\BellmannFord_DFS.dll
+D:\GitHub\Malbkov-labs\Графы\GraphicInterface\bin\Debug\Cycles.dll
+D:\GitHub\Malbkov-labs\Графы\GraphicInterface\bin\Debug\DekstraAlgoritm.dll
+D:\GitHub\Malbkov-labs\Графы\GraphicInterface\bin\Debug\DFS.dll
+D:\GitHub\Malbkov-labs\Графы\GraphicInterface\bin\Debug\DekstraAlgoritm.pdb
+D:\GitHub\Malbkov-labs\Графы\GraphicInterface\bin\Debug\DFS.pdb
+D:\GitHub\Malbkov-labs\Графы\GraphicInterface\bin\Debug\Algorithms_Library.pdb
+D:\GitHub\Malbkov-labs\Графы\GraphicInterface\bin\Debug\BellmannFord_DFS.pdb
+D:\GitHub\Malbkov-labs\Графы\GraphicInterface\bin\Debug\Cycles.pdb
+D:\GitHub\Malbkov-labs\Графы\GraphicInterface\obj\Debug\GraphicInterface.csprojAssemblyReference.cache
+D:\GitHub\Malbkov-labs\Графы\GraphicInterface\obj\Debug\GraphicInterface.DrawGraphForm.resources
+D:\GitHub\Malbkov-labs\Графы\GraphicInterface\obj\Debug\GraphicInterface.Properties.Resources.resources
+D:\GitHub\Malbkov-labs\Графы\GraphicInterface\obj\Debug\GraphicInterface.csproj.GenerateResource.cache
+D:\GitHub\Malbkov-labs\Графы\GraphicInterface\obj\Debug\GraphicInterface.csproj.CoreCompileInputs.cache
+D:\GitHub\Malbkov-labs\Графы\GraphicInterface\obj\Debug\GraphicInterface.csproj.CopyComplete
+D:\GitHub\Malbkov-labs\Графы\GraphicInterface\obj\Debug\GraphicInterface.exe
+D:\GitHub\Malbkov-labs\Графы\GraphicInterface\obj\Debug\GraphicInterface.pdb

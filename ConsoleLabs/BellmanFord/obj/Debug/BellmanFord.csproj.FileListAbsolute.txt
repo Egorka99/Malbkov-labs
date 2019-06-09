@@ -4,3 +4,9 @@ D:\Study\MVS Projects\Malbkov-labs\ConsoleLabs\BellmanFord\obj\Debug\BellmanFord
 D:\Study\MVS Projects\Malbkov-labs\ConsoleLabs\BellmanFord\obj\Debug\BellmanFord.csproj.CoreCompileInputs.cache
 D:\Study\MVS Projects\Malbkov-labs\ConsoleLabs\BellmanFord\obj\Debug\BellmanFord.dll
 D:\Study\MVS Projects\Malbkov-labs\ConsoleLabs\BellmanFord\obj\Debug\BellmanFord.pdb
+D:\GitHub\Malbkov-labs\ConsoleLabs\BellmanFord\bin\Debug\BellmanFord.dll
+D:\GitHub\Malbkov-labs\ConsoleLabs\BellmanFord\bin\Debug\BellmanFord.pdb
+D:\GitHub\Malbkov-labs\ConsoleLabs\BellmanFord\obj\Debug\BellmanFord.csprojAssemblyReference.cache
+D:\GitHub\Malbkov-labs\ConsoleLabs\BellmanFord\obj\Debug\BellmanFord.csproj.CoreCompileInputs.cache
+D:\GitHub\Malbkov-labs\ConsoleLabs\BellmanFord\obj\Debug\BellmanFord.dll
+D:\GitHub\Malbkov-labs\ConsoleLabs\BellmanFord\obj\Debug\BellmanFord.pdb

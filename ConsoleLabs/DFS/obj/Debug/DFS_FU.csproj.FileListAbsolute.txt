@@ -4,3 +4,9 @@ D:\Study\MVS Projects\Malbkov-labs\ConsoleLabs\DFS\obj\Debug\DFS_FU.csprojAssemb
 D:\Study\MVS Projects\Malbkov-labs\ConsoleLabs\DFS\obj\Debug\DFS_FU.csproj.CoreCompileInputs.cache
 D:\Study\MVS Projects\Malbkov-labs\ConsoleLabs\DFS\obj\Debug\DFS.dll
 D:\Study\MVS Projects\Malbkov-labs\ConsoleLabs\DFS\obj\Debug\DFS.pdb
+D:\GitHub\Malbkov-labs\ConsoleLabs\DFS\bin\Debug\DFS.dll
+D:\GitHub\Malbkov-labs\ConsoleLabs\DFS\bin\Debug\DFS.pdb
+D:\GitHub\Malbkov-labs\ConsoleLabs\DFS\obj\Debug\DFS_FU.csprojAssemblyReference.cache
+D:\GitHub\Malbkov-labs\ConsoleLabs\DFS\obj\Debug\DFS_FU.csproj.CoreCompileInputs.cache
+D:\GitHub\Malbkov-labs\ConsoleLabs\DFS\obj\Debug\DFS.dll
+D:\GitHub\Malbkov-labs\ConsoleLabs\DFS\obj\Debug\DFS.pdb

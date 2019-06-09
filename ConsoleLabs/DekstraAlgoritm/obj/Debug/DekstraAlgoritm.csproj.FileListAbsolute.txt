@@ -16,3 +16,9 @@ D:\Study\MVS Projects\Malbkov-labs\ConsoleLabs\DekstraAlgoritm\bin\Debug\Dekstra
 D:\Study\MVS Projects\Malbkov-labs\ConsoleLabs\DekstraAlgoritm\bin\Debug\DekstraAlgoritm.pdb
 D:\Study\MVS Projects\Malbkov-labs\ConsoleLabs\DekstraAlgoritm\obj\Debug\DekstraAlgoritm.csprojAssemblyReference.cache
 D:\Study\MVS Projects\Malbkov-labs\ConsoleLabs\DekstraAlgoritm\obj\Debug\DekstraAlgoritm.csproj.CoreCompileInputs.cache
+D:\GitHub\Malbkov-labs\ConsoleLabs\DekstraAlgoritm\bin\Debug\DekstraAlgoritm.dll
+D:\GitHub\Malbkov-labs\ConsoleLabs\DekstraAlgoritm\bin\Debug\DekstraAlgoritm.pdb
+D:\GitHub\Malbkov-labs\ConsoleLabs\DekstraAlgoritm\obj\Debug\DekstraAlgoritm.csprojAssemblyReference.cache
+D:\GitHub\Malbkov-labs\ConsoleLabs\DekstraAlgoritm\obj\Debug\DekstraAlgoritm.csproj.CoreCompileInputs.cache
+D:\GitHub\Malbkov-labs\ConsoleLabs\DekstraAlgoritm\obj\Debug\DekstraAlgoritm.dll
+D:\GitHub\Malbkov-labs\ConsoleLabs\DekstraAlgoritm\obj\Debug\DekstraAlgoritm.pdb

@@ -4,3 +4,9 @@ D:\Study\MVS Projects\Malbkov-labs\Графы\Cycles\bin\Debug\Cycles.dll
 D:\Study\MVS Projects\Malbkov-labs\Графы\Cycles\bin\Debug\Cycles.pdb
 D:\Study\MVS Projects\Malbkov-labs\Графы\Cycles\obj\Debug\Cycles.dll
 D:\Study\MVS Projects\Malbkov-labs\Графы\Cycles\obj\Debug\Cycles.pdb
+D:\GitHub\Malbkov-labs\Графы\Cycles\bin\Debug\Cycles.dll
+D:\GitHub\Malbkov-labs\Графы\Cycles\bin\Debug\Cycles.pdb
+D:\GitHub\Malbkov-labs\Графы\Cycles\obj\Debug\Cycles.csprojAssemblyReference.cache
+D:\GitHub\Malbkov-labs\Графы\Cycles\obj\Debug\Cycles.csproj.CoreCompileInputs.cache
+D:\GitHub\Malbkov-labs\Графы\Cycles\obj\Debug\Cycles.dll
+D:\GitHub\Malbkov-labs\Графы\Cycles\obj\Debug\Cycles.pdb
