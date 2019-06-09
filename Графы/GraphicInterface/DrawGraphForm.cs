@@ -22,7 +22,7 @@ namespace GraphicInterface
         /// <summary>
         /// Лист ребер
         /// </summary> 
-        List<Edgee> E;
+        List<Edgee> E; 
 
         int selected1; //выбранные вершины, для соединения линиями
         int selected2;
@@ -364,9 +364,10 @@ namespace GraphicInterface
             panelPrim.Visible = false;
             panelBF.Visible = false;
             panelDFS.Visible = false; 
-             
+            panelCycles.Visible = false; 
+      
         }   
-
+         
         private void ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             AllPanelClose(); //закрываем все панели с кнопками для алгоритмов
@@ -375,20 +376,23 @@ namespace GraphicInterface
             // показываем панель управления в зависимости от выбранного варианта 
             switch (comboBox1.SelectedIndex)
             {
-                case 0:
+                case 0: 
                     panelKruskal.Show(); 
                     break; 
                 case 1: 
                     panelPrim.Show();
                     break;
-                case 2:
+                case 2: 
                     panelBF.Show();
                     break; 
-                case 4:
+                case 4: 
                     panelDFS.Show();
                     break;
-            } 
-              
+                case 5: 
+                    panelCycles.Show();
+                    break;
+            }  
+               
               
         }
 
@@ -433,12 +437,64 @@ namespace GraphicInterface
             }
 
             graph.doDFS(); //выполняем алгоритм  
-
-            // выводим ответ в листбокс  
+            
+            // выводим ответ в листбокс   
             foreach (var item in graph.ListInfo)
             {
                 listBox1.Items.Add(item);
             } 
         }
+
+          
+        private void ButtonEuler_Click(object sender, EventArgs e)
+        {
+            bool HasCycle = false;
+
+            int[,] matrix = new int[V.Count, V.Count]; 
+             
+            for (int i = 0; i < V.Count; i++) 
+                for (int j = 0; j < V.Count; j++)
+                    matrix[i, j] = 0; 
+            for (int i = 0; i < E.Count; i++) 
+            { 
+                matrix[E[i].v1, E[i].v2] = E[i].weight;
+                matrix[E[i].v2, E[i].v1] = E[i].weight;
+            }   
+              
+            HasCycle = Cycles.Euler_cycle(matrix);  
+             
+            if (HasCycle)
+                listBox1.Items.Add("В графе содержится Эйлеров цикл"); 
+            else
+            {
+                listBox1.Items.Add("В графе не содержится Эйлеров цикл");
+            }
+        } 
+
+        private void ButtonGamilton_Click(object sender, EventArgs e)
+        {
+            int[] mass; 
+
+            int[,] matrix = new int[V.Count, V.Count];
+
+            for (int i = 0; i < V.Count; i++)
+                for (int j = 0; j < V.Count; j++)
+                    matrix[i, j] = 0;
+            for (int i = 0; i < E.Count; i++)
+            {
+                matrix[E[i].v1, E[i].v2] = E[i].weight;
+                matrix[E[i].v2, E[i].v1] = E[i].weight; 
+            } 
+
+            bool flag = Cycles.HamCycle(matrix, matrix.GetLength(1), out mass);
+            if (flag)
+            { 
+                listBox1.Items.Add("Путь: " + (char)13);
+                for (int i = 0; i < matrix.GetLength(1); i++)
+                    listBox1.Items.Add(mass[i] + "  "); 
+            }
+            else listBox1.Items.Add("Гамильтонов цикл в данном случае невозможен");
+
+        }  
     }  
 } 

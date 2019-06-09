@@ -23,7 +23,7 @@ namespace DekstraAlgoritm
         }
         /// <summary>
         /// Запуск алгоритма расчета
-        /// </summary>
+        /// </summary> 
         /// <param name="beginp"></param>
         public void AlgoritmRun(Point beginp)
         {

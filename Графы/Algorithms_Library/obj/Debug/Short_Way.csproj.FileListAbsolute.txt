@@ -1,0 +1,6 @@
+D:\Study\MVS Projects\Malbkov-labs\Графы\Algorithms_Library\bin\Debug\Algorithms_Library.dll
+D:\Study\MVS Projects\Malbkov-labs\Графы\Algorithms_Library\bin\Debug\Algorithms_Library.pdb
+D:\Study\MVS Projects\Malbkov-labs\Графы\Algorithms_Library\obj\Debug\Short_Way.csprojAssemblyReference.cache
+D:\Study\MVS Projects\Malbkov-labs\Графы\Algorithms_Library\obj\Debug\Short_Way.csproj.CoreCompileInputs.cache
+D:\Study\MVS Projects\Malbkov-labs\Графы\Algorithms_Library\obj\Debug\Algorithms_Library.dll
+D:\Study\MVS Projects\Malbkov-labs\Графы\Algorithms_Library\obj\Debug\Algorithms_Library.pdb

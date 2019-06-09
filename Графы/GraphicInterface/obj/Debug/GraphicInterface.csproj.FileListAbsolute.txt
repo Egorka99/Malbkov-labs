@@ -32,3 +32,5 @@ D:\Study\MVS Projects\Malbkov-labs\Графы\GraphicInterface\bin\Debug\Dekstra
 D:\Study\MVS Projects\Malbkov-labs\Графы\GraphicInterface\bin\Debug\DFS.pdb
 D:\Study\MVS Projects\Malbkov-labs\Графы\GraphicInterface\bin\Debug\BellmannFord_DFS.dll
 D:\Study\MVS Projects\Malbkov-labs\Графы\GraphicInterface\bin\Debug\BellmannFord_DFS.pdb
+D:\Study\MVS Projects\Malbkov-labs\Графы\GraphicInterface\bin\Debug\Cycles.dll
+D:\Study\MVS Projects\Malbkov-labs\Графы\GraphicInterface\bin\Debug\Cycles.pdb

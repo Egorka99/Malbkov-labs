@@ -33,7 +33,7 @@ namespace Algorithms_Library
     }
 
     public class Kruskal
-    {
+    { 
         /// <summary>
         /// Константа 100
         /// </summary>

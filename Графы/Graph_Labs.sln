@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DekstraAlgoritm", "..\Conso
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BellmannFord_DFS", "BellmannFord_DFS\BellmannFord_DFS.csproj", "{8744A63E-45F3-4784-B04C-666A4DDE32B2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cycles", "Cycles\Cycles.csproj", "{7E1BC365-09A0-4F13-982D-FB41CB2F6FAA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{8744A63E-45F3-4784-B04C-666A4DDE32B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8744A63E-45F3-4784-B04C-666A4DDE32B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8744A63E-45F3-4784-B04C-666A4DDE32B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E1BC365-09A0-4F13-982D-FB41CB2F6FAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E1BC365-09A0-4F13-982D-FB41CB2F6FAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E1BC365-09A0-4F13-982D-FB41CB2F6FAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E1BC365-09A0-4F13-982D-FB41CB2F6FAA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

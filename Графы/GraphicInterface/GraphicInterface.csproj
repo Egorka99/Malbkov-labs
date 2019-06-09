@@ -100,6 +100,10 @@
       <Project>{8744a63e-45f3-4784-b04c-666a4dde32b2}</Project>
       <Name>BellmannFord_DFS</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Cycles\Cycles.csproj">
+      <Project>{7e1bc365-09a0-4f13-982d-fb41cb2f6faa}</Project>
+      <Name>Cycles</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
