@@ -10,3 +10,8 @@ D:\GitHub\Malbkov-labs\Графы\BellmannFord_DFS\obj\Debug\BellmannFord_DFS.cs
 D:\GitHub\Malbkov-labs\Графы\BellmannFord_DFS\obj\Debug\BellmannFord_DFS.dll
 D:\GitHub\Malbkov-labs\Графы\BellmannFord_DFS\obj\Debug\BellmannFord_DFS.pdb
 D:\Study\MVS Projects\Malbkov-labs\Графы\BellmannFord_DFS\obj\Debug\BellmannFord_DFS.csprojAssemblyReference.cache
+C:\GitHub\Malbkov-labs\Графы\BellmannFord_DFS\bin\Debug\BellmannFord_DFS.dll
+C:\GitHub\Malbkov-labs\Графы\BellmannFord_DFS\bin\Debug\BellmannFord_DFS.pdb
+C:\GitHub\Malbkov-labs\Графы\BellmannFord_DFS\obj\Debug\BellmannFord_DFS.csproj.CoreCompileInputs.cache
+C:\GitHub\Malbkov-labs\Графы\BellmannFord_DFS\obj\Debug\BellmannFord_DFS.dll
+C:\GitHub\Malbkov-labs\Графы\BellmannFord_DFS\obj\Debug\BellmannFord_DFS.pdb

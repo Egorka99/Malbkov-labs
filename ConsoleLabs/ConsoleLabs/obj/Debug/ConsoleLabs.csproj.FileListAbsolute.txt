@@ -18,8 +18,6 @@ C:\GitHub\Malbkov-labs\ConsoleLabs\ConsoleLabs\obj\Debug\ConsoleLabs.csproj.Core
 C:\GitHub\Malbkov-labs\ConsoleLabs\ConsoleLabs\obj\Debug\ConsoleLabs.csproj.CopyComplete
 C:\GitHub\Malbkov-labs\ConsoleLabs\ConsoleLabs\obj\Debug\ConsoleLabs.exe
 C:\GitHub\Malbkov-labs\ConsoleLabs\ConsoleLabs\obj\Debug\ConsoleLabs.pdb
-C:\GitHub\Malbkov-labs\ConsoleLabs\ConsoleLabs\bin\Debug\Short_way.dll
-C:\GitHub\Malbkov-labs\ConsoleLabs\ConsoleLabs\bin\Debug\Short_way.pdb
 C:\GitHub\Malbkov-labs\ConsoleLabs\ConsoleLabs\bin\Debug\DekstraAlgoritm.dll
 C:\GitHub\Malbkov-labs\ConsoleLabs\ConsoleLabs\bin\Debug\DekstraAlgoritm.pdb
 D:\MVS Project\repos\Malbkov-labs\ConsoleLabs\ConsoleLabs\obj\Debug\ConsoleLabs.csprojAssemblyReference.cache
@@ -74,3 +72,7 @@ D:\GitHub\Malbkov-labs\ConsoleLabs\ConsoleLabs\obj\Debug\ConsoleLabs.csproj.Core
 D:\GitHub\Malbkov-labs\ConsoleLabs\ConsoleLabs\obj\Debug\ConsoleLabs.csproj.CopyComplete
 D:\GitHub\Malbkov-labs\ConsoleLabs\ConsoleLabs\obj\Debug\ConsoleLabs.exe
 D:\GitHub\Malbkov-labs\ConsoleLabs\ConsoleLabs\obj\Debug\ConsoleLabs.pdb
+C:\GitHub\Malbkov-labs\ConsoleLabs\ConsoleLabs\bin\Debug\AVLTree.dll
+C:\GitHub\Malbkov-labs\ConsoleLabs\ConsoleLabs\bin\Debug\BTree.dll
+C:\GitHub\Malbkov-labs\ConsoleLabs\ConsoleLabs\bin\Debug\AVLTree.pdb
+C:\GitHub\Malbkov-labs\ConsoleLabs\ConsoleLabs\bin\Debug\BTree.pdb

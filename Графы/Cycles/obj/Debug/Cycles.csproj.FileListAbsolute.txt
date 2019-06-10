@@ -10,3 +10,8 @@ D:\GitHub\Malbkov-labs\Графы\Cycles\obj\Debug\Cycles.csprojAssemblyReferenc
 D:\GitHub\Malbkov-labs\Графы\Cycles\obj\Debug\Cycles.csproj.CoreCompileInputs.cache
 D:\GitHub\Malbkov-labs\Графы\Cycles\obj\Debug\Cycles.dll
 D:\GitHub\Malbkov-labs\Графы\Cycles\obj\Debug\Cycles.pdb
+C:\GitHub\Malbkov-labs\Графы\Cycles\bin\Debug\Cycles.dll
+C:\GitHub\Malbkov-labs\Графы\Cycles\bin\Debug\Cycles.pdb
+C:\GitHub\Malbkov-labs\Графы\Cycles\obj\Debug\Cycles.csproj.CoreCompileInputs.cache
+C:\GitHub\Malbkov-labs\Графы\Cycles\obj\Debug\Cycles.dll
+C:\GitHub\Malbkov-labs\Графы\Cycles\obj\Debug\Cycles.pdb

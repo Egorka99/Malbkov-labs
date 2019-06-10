@@ -510,9 +510,48 @@ namespace GraphicInterface
             else listBox1.Items.Add("Гамильтонов цикл в данном случае невозможен");
 
         }
+        /*
+        /// <summary>
+        /// Метод для нахождения смежных ребер входяшей вершины
+        /// </summary>
+        /// <param name="vertice">Текушая вершина</param>
+        /// <param name="edges">Лист ребер</param>
+        /// <returns></returns>
+        private List<Edgee> Get_Adjacent_Vertices(int vertice)
+        {
+            List<Edgee> Adjacent_Vertices = new List<Edgee>();
+
+            for (int i = 0; i < E.Count; i++)
+            {
+                if (E != null)
+                {
+                    if ((E[i].v1 == vertice) || (E[i].v2 == vertice))
+                    {
+                        Adjacent_Vertices.Add(E[i]);
+                        E.Remove(E[i]);
+                    }
+                }
+                
+            }
+            /*
+            foreach (var item in E)
+            {
+                if (item != null)
+                    if ((item.v1 == vertice) || (item.v2 == vertice))
+                    {
+                        Adjacent_Vertices.Add(item);
+                        E.Remove(item);
+                    }
+            }
+            /*
+            return Adjacent_Vertices;
+
+        }
+        */
 
         private void ButtonDijkstra_Click(object sender, EventArgs e)
-        {
+        { 
+            /*
             //делай тута, библа в проекте
             DekstraAlgoritm.Point[] v = new DekstraAlgoritm.Point[V.Count];
             v[0] = new DekstraAlgoritm.Point(0, false, "0");
@@ -521,20 +560,39 @@ namespace GraphicInterface
                 v[i] = new DekstraAlgoritm.Point(9999, false, Convert.ToString(i));
 
             }
-            Rebro[] rebras = new Rebro[E.Count];
-
-            rebras[0] = new Rebro((new DekstraAlgoritm.Point(0, false, Convert.ToString(E[0].v1))), (new DekstraAlgoritm.Point(9999, false, Convert.ToString(E[0].v2))), E[0].weight);
-
-            for (int i = 1; i < E.Count; i++)
+            List<Rebro> rebras = new List<Rebro>();
+            for (int i = 0; i < E.Count; i++)
             {
-                rebras[i] = new Rebro((new DekstraAlgoritm.Point(9999, false, Convert.ToString(E[i].v1))), (new DekstraAlgoritm.Point(9999, false, Convert.ToString(E[i].v2))), E[i].weight);
+                List<Edgee> Adjacent_Vertices = Get_Adjacent_Vertices(Convert.ToInt32(v[i].Name));
+                for (int z = 0; z < Adjacent_Vertices.Count; z++)
+                {
+                    DekstraAlgoritm.Point temp1 = null , temp2  = null;
+                    for (int f = 0; f < v.Length; f++)
+                    {
+                        if (Adjacent_Vertices[z].v1 == Convert.ToInt32(v[f].Name))
+                        {
+                            temp1 = v[f];
+                        }
+                        if (Adjacent_Vertices[z].v2 == Convert.ToInt32(v[f].Name))
+                        {
+                            temp2 = v[f];
+                        }
+
+                    }
+                    rebras.Add(new Rebro(temp1, temp2,Adjacent_Vertices[z].weight));
+                    Adjacent_Vertices.RemoveAt(z);
+                   
+                }
+
             }
 
-            DekstraAlgorim da = new DekstraAlgorim(v, rebras);
+            DekstraAlgorim da = new DekstraAlgorim(v, rebras.ToArray());
             da.AlgoritmRun(v[0]);
+            //Тут почему то предок точки нулл , хотя в консольке все ок 
             List<string> b = PrintGrath.PrintAllMinPaths(da);//ошибка с печатью потом пофикшу
             for (int i = 0; i < b.Count; i++)                                 // b.Count меняешь на цифру до которого поинта считать (конец)
                 listBox1.Items.Add(b[i]);
+                */
 
         }
 

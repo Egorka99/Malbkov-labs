@@ -10,3 +10,9 @@ D:\GitHub\Malbkov-labs\Графы\Algorithms_Library\obj\Debug\Short_Way.csprojA
 D:\GitHub\Malbkov-labs\Графы\Algorithms_Library\obj\Debug\Short_Way.csproj.CoreCompileInputs.cache
 D:\GitHub\Malbkov-labs\Графы\Algorithms_Library\obj\Debug\Algorithms_Library.dll
 D:\GitHub\Malbkov-labs\Графы\Algorithms_Library\obj\Debug\Algorithms_Library.pdb
+C:\GitHub\Malbkov-labs\Графы\Algorithms_Library\bin\Debug\Algorithms_Library.dll
+C:\GitHub\Malbkov-labs\Графы\Algorithms_Library\bin\Debug\Algorithms_Library.pdb
+C:\GitHub\Malbkov-labs\Графы\Algorithms_Library\obj\Debug\Short_Way.csprojResolveAssemblyReference.cache
+C:\GitHub\Malbkov-labs\Графы\Algorithms_Library\obj\Debug\Short_Way.csproj.CoreCompileInputs.cache
+C:\GitHub\Malbkov-labs\Графы\Algorithms_Library\obj\Debug\Algorithms_Library.dll
+C:\GitHub\Malbkov-labs\Графы\Algorithms_Library\obj\Debug\Algorithms_Library.pdb

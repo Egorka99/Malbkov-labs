@@ -10,3 +10,8 @@ D:\GitHub\Malbkov-labs\ConsoleLabs\BTree\obj\Debug\BTree.csprojAssemblyReference
 D:\GitHub\Malbkov-labs\ConsoleLabs\BTree\obj\Debug\BTree.csproj.CoreCompileInputs.cache
 D:\GitHub\Malbkov-labs\ConsoleLabs\BTree\obj\Debug\BTree.dll
 D:\GitHub\Malbkov-labs\ConsoleLabs\BTree\obj\Debug\BTree.pdb
+C:\GitHub\Malbkov-labs\ConsoleLabs\BTree\bin\Debug\BTree.dll
+C:\GitHub\Malbkov-labs\ConsoleLabs\BTree\bin\Debug\BTree.pdb
+C:\GitHub\Malbkov-labs\ConsoleLabs\BTree\obj\Debug\BTree.csproj.CoreCompileInputs.cache
+C:\GitHub\Malbkov-labs\ConsoleLabs\BTree\obj\Debug\BTree.dll
+C:\GitHub\Malbkov-labs\ConsoleLabs\BTree\obj\Debug\BTree.pdb

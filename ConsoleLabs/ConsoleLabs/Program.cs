@@ -4,7 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Labs;
-using System.IO; 
+using System.IO;
+using DekstraAlgoritm;
     
 namespace ConsoleLabs 
 {
@@ -105,11 +106,36 @@ namespace ConsoleLabs
         }
 
 
+        static void lab6()
+        {
+            Console.WriteLine("Лабораторная работа №6");
+            Console.WriteLine("---");
 
-         
+            Point[] v = new Point[3];
+            v[0] = new Point(0, false, "0"); //в любой из точек меняешь значение на 0 (в остальных оставляешь 9999) (начало)	
+            v[1] = new Point(9999, false, "1");
+            v[2] = new Point(9999, false, "2");
+           
+            Rebro[] rebras = new Rebro[2];
+            rebras[0] = new Rebro(v[0], v[1], 4);
+            rebras[1] = new Rebro(v[1], v[2], 2);//FC	
+            
+            DekstraAlgorim da = new DekstraAlgorim(v, rebras);
+            da.AlgoritmRun(v[0]);                                               //выбираешь в каком именно ты поставил 0 (начало)	
+            List<string> b = PrintGrath.PrintAllMinPaths(da);
+            for (int i = 0; i < b.Count; i++)                                 // b.Count меняешь на цифру до которого поинта считать (конец)	
+                Console.WriteLine(b[i]);
+
+            Console.WriteLine("Press any key");
+            Console.WriteLine("---");
+            Console.ReadKey();
+        }
+
+
         static void Main(string[] args)
         {
-            Lab_16(); 
+            lab6();
+            //Lab_16(); 
             //Lab_15();     
 
            // Lab_12_13(); 

@@ -63,6 +63,10 @@
       <Project>{a884a9ec-04f9-4f85-ae49-0ff802fc80e7}</Project>
       <Name>BTree</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DekstraAlgoritm\DekstraAlgoritm.csproj">
+      <Project>{68529a6f-77f2-487c-bd4c-8432f85cf31f}</Project>
+      <Name>DekstraAlgoritm</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
