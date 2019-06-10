@@ -367,9 +367,11 @@ namespace GraphicInterface
             panelBF.Visible = false;
             panelDFS.Visible = false; 
             panelCycles.Visible = false;
-            panelDijktra.Visible = false; 
-      
-        }   
+            panelDijktra.Visible = false;
+            panelFU.Visible = false;
+            panelSCC.Visible = false; 
+       
+        }    
           
         private void ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -387,7 +389,10 @@ namespace GraphicInterface
                     break;
                 case 2: 
                     panelBF.Show(); 
-                    break; 
+                    break;
+                case 3:
+                    panelFU.Show();
+                    break;
                 case 4: 
                     panelDFS.Show();
                     break;
@@ -396,9 +401,12 @@ namespace GraphicInterface
                     break;
                 case 6:
                     panelDijktra.Show();
+                    break;
+                case 7: 
+                    panelSCC.Show();
                     break; 
             }  
-               
+                 
               
         }
 
@@ -528,6 +536,18 @@ namespace GraphicInterface
             for (int i = 0; i < b.Count; i++)                                 // b.Count меняешь на цифру до которого поинта считать (конец)
                 listBox1.Items.Add(b[i]);
 
+        }
+
+        private void ButtonFU_Click(object sender, EventArgs e)
+        {
+            FormFU form = new FormFU();
+            form.Show(); 
+        }
+
+        private void ButtonSCC_Click(object sender, EventArgs e)
+        {
+            FormFU form = new FormFU();
+            form.Show();
         }
     }  
 } 

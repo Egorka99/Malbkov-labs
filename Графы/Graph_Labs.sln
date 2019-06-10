@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Short_Way", "Algorithms_Lib
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphicInterface", "GraphicInterface\GraphicInterface.csproj", "{BAC084EC-219E-4650-AC5D-E77C3494F79E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DFS_FU", "..\ConsoleLabs\DFS\DFS_FU.csproj", "{57A84CD1-DC28-483A-A687-A98680A433BF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphAlgo", "..\ConsoleLabs\DFS\GraphAlgo.csproj", "{57A84CD1-DC28-483A-A687-A98680A433BF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DekstraAlgoritm", "..\ConsoleLabs\DekstraAlgoritm\DekstraAlgoritm.csproj", "{68529A6F-77F2-487C-BD4C-8432F85CF31F}"
 EndProject

@@ -55,10 +55,19 @@
       <DependentUpon>DrawGraphForm.cs</DependentUpon>
     </Compile>
     <Compile Include="DrawGraph.cs" />
+    <Compile Include="FormFU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFU.Designer.cs">
+      <DependentUpon>FormFU.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="DrawGraphForm.resx">
       <DependentUpon>DrawGraphForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFU.resx">
+      <DependentUpon>FormFU.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -88,9 +97,9 @@
       <Project>{68529a6f-77f2-487c-bd4c-8432f85cf31f}</Project>
       <Name>DekstraAlgoritm</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\ConsoleLabs\DFS\DFS_FU.csproj">
+    <ProjectReference Include="..\..\ConsoleLabs\DFS\GraphAlgo.csproj">
       <Project>{57a84cd1-dc28-483a-a687-a98680a433bf}</Project>
-      <Name>DFS_FU</Name>
+      <Name>GraphAlgo</Name>
     </ProjectReference>
     <ProjectReference Include="..\Algorithms_Library\Short_Way.csproj">
       <Project>{76ffd1e4-a73a-4681-b2b2-fee91a4240ba}</Project>

@@ -1,0 +1,6 @@
+D:\Study\MVS Projects\Malbkov-labs\ConsoleLabs\DFS\bin\Debug\DFS.dll
+D:\Study\MVS Projects\Malbkov-labs\ConsoleLabs\DFS\bin\Debug\DFS.pdb
+D:\Study\MVS Projects\Malbkov-labs\ConsoleLabs\DFS\obj\Debug\GraphAlgo.csprojAssemblyReference.cache
+D:\Study\MVS Projects\Malbkov-labs\ConsoleLabs\DFS\obj\Debug\GraphAlgo.csproj.CoreCompileInputs.cache
+D:\Study\MVS Projects\Malbkov-labs\ConsoleLabs\DFS\obj\Debug\DFS.dll
+D:\Study\MVS Projects\Malbkov-labs\ConsoleLabs\DFS\obj\Debug\DFS.pdb

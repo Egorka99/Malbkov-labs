@@ -53,10 +53,8 @@ namespace ConsoleLabs
                 graph.PrintAdjacencyMatrix(); 
              
                 graph.PrintDistanceMatrix_FU(); 
-
-                graph.PrintDFS();   
                    
-                Console.ReadKey();
+                Console.ReadKey(); 
             }
             catch (IndexOutOfRangeException)
             {
@@ -149,7 +147,7 @@ namespace ConsoleLabs
             k.BuildSpanningTree();
             Console.WriteLine("Cost: " + k.Cost);
             k.DisplayInfo();
-            Console.WriteLine("---");
+            Console.WriteLine("---"); 
             Console.WriteLine("Second var...");
             Console.WriteLine("---");
 
@@ -212,12 +210,12 @@ namespace ConsoleLabs
             // Осталось: 1,3,4,9,11,14,16(реализация)
 
             //Lab_8(); 
-            //Lab_2_7();  
+            Lab_2_7();  
             //Lab_15();    
-            lab6();  
+            //lab6();  
             //lab_5_10();
            // Lab_12_13(); 
               
         }  
-    }
+    } 
 }

@@ -55,3 +55,4 @@ D:\GitHub\Malbkov-labs\Графы\GraphicInterface\obj\Debug\GraphicInterface.cs
 D:\GitHub\Malbkov-labs\Графы\GraphicInterface\obj\Debug\GraphicInterface.csproj.CopyComplete
 D:\GitHub\Malbkov-labs\Графы\GraphicInterface\obj\Debug\GraphicInterface.exe
 D:\GitHub\Malbkov-labs\Графы\GraphicInterface\obj\Debug\GraphicInterface.pdb
+D:\Study\MVS Projects\Malbkov-labs\Графы\GraphicInterface\obj\Debug\GraphicInterface.FormFU.resources

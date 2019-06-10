@@ -48,7 +48,7 @@ namespace Labs
 
 
         /// <summary>
-        /// Лист с ответом алгоритма  
+        /// Лист с ответом алгоритма   
         /// </summary>
         public List<string> ListInfo = new List<string>();
 

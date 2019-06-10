@@ -52,6 +52,10 @@
             this.buttonEuler = new System.Windows.Forms.Button();
             this.panelDijktra = new System.Windows.Forms.Panel();
             this.buttonDijkstra = new System.Windows.Forms.Button();
+            this.panelFU = new System.Windows.Forms.Panel();
+            this.buttonFU = new System.Windows.Forms.Button();
+            this.panelSCC = new System.Windows.Forms.Panel();
+            this.buttonSCC = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.sheet)).BeginInit();
             this.panelKruskal.SuspendLayout();
             this.panelPrim.SuspendLayout();
@@ -59,6 +63,8 @@
             this.panelDFS.SuspendLayout();
             this.panelCycles.SuspendLayout();
             this.panelDijktra.SuspendLayout();
+            this.panelFU.SuspendLayout();
+            this.panelSCC.SuspendLayout();
             this.SuspendLayout();
             // 
             // sheet
@@ -162,7 +168,8 @@
             "Алгоритм Флойда-Уоршелла",
             "Поиск в глубину (DFS)",
             "Циклы в графах",
-            "Алгоритм Дейкстры"});
+            "Алгоритм Дейкстры",
+            "Поиск сильно связанных компонент"});
             this.comboBox1.Location = new System.Drawing.Point(153, 514);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(244, 21);
@@ -303,11 +310,51 @@
             this.buttonDijkstra.UseVisualStyleBackColor = true;
             this.buttonDijkstra.Click += new System.EventHandler(this.ButtonDijkstra_Click);
             // 
+            // panelFU
+            // 
+            this.panelFU.Controls.Add(this.buttonFU);
+            this.panelFU.Location = new System.Drawing.Point(41, 545);
+            this.panelFU.Name = "panelFU";
+            this.panelFU.Size = new System.Drawing.Size(379, 100);
+            this.panelFU.TabIndex = 19;
+            this.panelFU.Visible = false;
+            // 
+            // buttonFU
+            // 
+            this.buttonFU.Location = new System.Drawing.Point(112, 25);
+            this.buttonFU.Name = "buttonFU";
+            this.buttonFU.Size = new System.Drawing.Size(154, 46);
+            this.buttonFU.TabIndex = 20;
+            this.buttonFU.Text = "Построить матрицу расстояний";
+            this.buttonFU.UseVisualStyleBackColor = true;
+            this.buttonFU.Click += new System.EventHandler(this.ButtonFU_Click);
+            // 
+            // panelSCC
+            // 
+            this.panelSCC.Controls.Add(this.buttonSCC);
+            this.panelSCC.Location = new System.Drawing.Point(41, 545);
+            this.panelSCC.Name = "panelSCC";
+            this.panelSCC.Size = new System.Drawing.Size(379, 100);
+            this.panelSCC.TabIndex = 20;
+            this.panelSCC.Visible = false;
+            // 
+            // buttonSCC
+            // 
+            this.buttonSCC.Location = new System.Drawing.Point(112, 28);
+            this.buttonSCC.Name = "buttonSCC";
+            this.buttonSCC.Size = new System.Drawing.Size(141, 48);
+            this.buttonSCC.TabIndex = 21;
+            this.buttonSCC.Text = "Поиск сильно связанных компонент";
+            this.buttonSCC.UseVisualStyleBackColor = true;
+            this.buttonSCC.Click += new System.EventHandler(this.ButtonSCC_Click);
+            // 
             // DrawGraphForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(964, 746);
+            this.ClientSize = new System.Drawing.Size(964, 664);
+            this.Controls.Add(this.panelSCC);
+            this.Controls.Add(this.panelFU);
             this.Controls.Add(this.panelDijktra);
             this.Controls.Add(this.panelCycles);
             this.Controls.Add(this.panelDFS);
@@ -332,6 +379,8 @@
             this.panelDFS.ResumeLayout(false);
             this.panelCycles.ResumeLayout(false);
             this.panelDijktra.ResumeLayout(false);
+            this.panelFU.ResumeLayout(false);
+            this.panelSCC.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -363,5 +412,9 @@
         private System.Windows.Forms.Button buttonEuler;
         private System.Windows.Forms.Panel panelDijktra;
         private System.Windows.Forms.Button buttonDijkstra;
+        private System.Windows.Forms.Panel panelFU;
+        private System.Windows.Forms.Button buttonFU;
+        private System.Windows.Forms.Panel panelSCC;
+        private System.Windows.Forms.Button buttonSCC;
     }
 }
