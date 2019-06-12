@@ -562,7 +562,7 @@ namespace GraphicInterface
 
         private void ButtonDijkstra_Click(object sender, EventArgs e)
         { 
-            /**/
+            /**/  
             //делай тута, библа в проекте PS Это был адд
             DekstraAlgoritm.Point[] v = new DekstraAlgoritm.Point[V.Count];
             v[0] = new DekstraAlgoritm.Point(0, false, "0");
@@ -574,8 +574,8 @@ namespace GraphicInterface
            List<Rebro> rebras = new List<Rebro>();
            
            for (int i = 0; E.Count > 0; i++)
-            {
-                
+            {   
+                 
                 List<Edgee> Adjacent_Vertices = Get_Adjacent_Vertices(Convert.ToInt32(v[i].Name));
                 while( Adjacent_Vertices.Count > 0)
                 {
@@ -651,4 +651,4 @@ namespace GraphicInterface
         }
     }    
 } 
- 
+  
