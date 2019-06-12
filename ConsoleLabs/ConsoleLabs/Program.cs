@@ -121,7 +121,7 @@ namespace ConsoleLabs
             rebras[1] = new Rebro(v[1], v[2], 2);//FC	
             
             DekstraAlgorim da = new DekstraAlgorim(v, rebras);
-            da.AlgoritmRun(v[0]);                                               //выбираешь в каком именно ты поставил 0 (начало)	
+            da.AlgoritmRun();                                               //выбираешь в каком именно ты поставил 0 (начало)	
             List<string> b = PrintGrath.PrintAllMinPaths(da);
             for (int i = 0; i < b.Count; i++)                                 // b.Count меняешь на цифру до которого поинта считать (конец)	
                 Console.WriteLine(b[i]);
@@ -132,8 +132,13 @@ namespace ConsoleLabs
         }
 
 
+       
+
+
+
         static void Main(string[] args)
         {
+            
             lab6();
             //Lab_16(); 
             //Lab_15();     
@@ -141,5 +146,7 @@ namespace ConsoleLabs
            // Lab_12_13(); 
               
         }  
-    } 
+    }
+
+   
 }

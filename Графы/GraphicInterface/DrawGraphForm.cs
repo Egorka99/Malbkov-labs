@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using Algorithms_Library;
 using DekstraAlgoritm;
 using Labs;
+using BFS;
 
 
 namespace GraphicInterface
@@ -369,8 +370,11 @@ namespace GraphicInterface
             panelCycles.Visible = false;
             panelDijktra.Visible = false;
             panelFU.Visible = false;
-            panelSCC.Visible = false; 
-       
+            panelSCC.Visible = false;
+            panelBFS.Visible = false;
+
+
+
         }    
           
         private void ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -404,7 +408,10 @@ namespace GraphicInterface
                     break;
                 case 7: 
                     panelSCC.Show();
-                    break; 
+                    break;
+                case 8:
+                    panelBFS.Show();
+                    break;
             }  
                  
               
@@ -510,7 +517,7 @@ namespace GraphicInterface
             else listBox1.Items.Add("Гамильтонов цикл в данном случае невозможен");
 
         }
-        /*
+        /**/
         /// <summary>
         /// Метод для нахождения смежных ребер входяшей вершины
         /// </summary>
@@ -543,16 +550,16 @@ namespace GraphicInterface
                         E.Remove(item);
                     }
             }
-            /*
+            */
             return Adjacent_Vertices;
 
         }
-        */
+        
 
         private void ButtonDijkstra_Click(object sender, EventArgs e)
         { 
-            /*
-            //делай тута, библа в проекте
+            /**/
+            //делай тута, библа в проекте PS Это был адд
             DekstraAlgoritm.Point[] v = new DekstraAlgoritm.Point[V.Count];
             v[0] = new DekstraAlgoritm.Point(0, false, "0");
             for (int i = 1; i < V.Count; i++)
@@ -560,39 +567,44 @@ namespace GraphicInterface
                 v[i] = new DekstraAlgoritm.Point(9999, false, Convert.ToString(i));
 
             }
-            List<Rebro> rebras = new List<Rebro>();
-            for (int i = 0; i < E.Count; i++)
+           List<Rebro> rebras = new List<Rebro>();
+           
+           for (int i = 0; E.Count > 0; i++)
             {
+                
                 List<Edgee> Adjacent_Vertices = Get_Adjacent_Vertices(Convert.ToInt32(v[i].Name));
-                for (int z = 0; z < Adjacent_Vertices.Count; z++)
+                while( Adjacent_Vertices.Count > 0)
                 {
                     DekstraAlgoritm.Point temp1 = null , temp2  = null;
                     for (int f = 0; f < v.Length; f++)
                     {
-                        if (Adjacent_Vertices[z].v1 == Convert.ToInt32(v[f].Name))
+                        if (Adjacent_Vertices[0].v1 == Convert.ToInt32(v[f].Name))
                         {
                             temp1 = v[f];
+
                         }
-                        if (Adjacent_Vertices[z].v2 == Convert.ToInt32(v[f].Name))
+                        if (Adjacent_Vertices[0].v2 == Convert.ToInt32(v[f].Name))
                         {
                             temp2 = v[f];
                         }
 
+
                     }
-                    rebras.Add(new Rebro(temp1, temp2,Adjacent_Vertices[z].weight));
-                    Adjacent_Vertices.RemoveAt(z);
+                    rebras.Add (new Rebro(temp1, temp2,Adjacent_Vertices[0].weight));
+                    Adjacent_Vertices.RemoveAt(0);
+                    
                    
                 }
 
             }
 
             DekstraAlgorim da = new DekstraAlgorim(v, rebras.ToArray());
-            da.AlgoritmRun(v[0]);
+            da.AlgoritmRun();
             //Тут почему то предок точки нулл , хотя в консольке все ок 
             List<string> b = PrintGrath.PrintAllMinPaths(da);//ошибка с печатью потом пофикшу
             for (int i = 0; i < b.Count; i++)                                 // b.Count меняешь на цифру до которого поинта считать (конец)
                 listBox1.Items.Add(b[i]);
-                */
+                
 
         }
 
@@ -606,6 +618,21 @@ namespace GraphicInterface
         {
             FormFU form = new FormFU();
             form.Show();
+        }
+
+        private void BFS_button_Click(object sender, EventArgs e)
+        {
+            BFSS bfs = new BFSS(V.Count);
+            foreach (var item in E)
+            {
+                bfs.addEdge(item.v1, item.v2);
+            }
+            bfs.doBFS();
+            foreach (var item in bfs.Answer)
+            {
+                listBox1.Items.Add(item); 
+            }
+            
         }
     }  
 } 

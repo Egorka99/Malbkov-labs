@@ -56,6 +56,8 @@
             this.buttonFU = new System.Windows.Forms.Button();
             this.panelSCC = new System.Windows.Forms.Panel();
             this.buttonSCC = new System.Windows.Forms.Button();
+            this.panelBFS = new System.Windows.Forms.Panel();
+            this.BFS_button = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.sheet)).BeginInit();
             this.panelKruskal.SuspendLayout();
             this.panelPrim.SuspendLayout();
@@ -65,6 +67,7 @@
             this.panelDijktra.SuspendLayout();
             this.panelFU.SuspendLayout();
             this.panelSCC.SuspendLayout();
+            this.panelBFS.SuspendLayout();
             this.SuspendLayout();
             // 
             // sheet
@@ -169,7 +172,8 @@
             "Поиск в глубину (DFS)",
             "Циклы в графах",
             "Алгоритм Дейкстры",
-            "Поиск сильно связанных компонент"});
+            "Поиск сильно связанных компонент",
+            "Поиск в ширину (BFS)"});
             this.comboBox1.Location = new System.Drawing.Point(153, 514);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(244, 21);
@@ -294,6 +298,7 @@
             // panelDijktra
             // 
             this.panelDijktra.Controls.Add(this.buttonDijkstra);
+            this.panelDijktra.Controls.Add(this.panelFU);
             this.panelDijktra.Location = new System.Drawing.Point(41, 545);
             this.panelDijktra.Name = "panelDijktra";
             this.panelDijktra.Size = new System.Drawing.Size(379, 100);
@@ -313,7 +318,7 @@
             // panelFU
             // 
             this.panelFU.Controls.Add(this.buttonFU);
-            this.panelFU.Location = new System.Drawing.Point(41, 545);
+            this.panelFU.Location = new System.Drawing.Point(0, 0);
             this.panelFU.Name = "panelFU";
             this.panelFU.Size = new System.Drawing.Size(379, 100);
             this.panelFU.TabIndex = 19;
@@ -348,13 +353,32 @@
             this.buttonSCC.UseVisualStyleBackColor = true;
             this.buttonSCC.Click += new System.EventHandler(this.ButtonSCC_Click);
             // 
+            // panelBFS
+            // 
+            this.panelBFS.Controls.Add(this.BFS_button);
+            this.panelBFS.Location = new System.Drawing.Point(41, 545);
+            this.panelBFS.Name = "panelBFS";
+            this.panelBFS.Size = new System.Drawing.Size(379, 100);
+            this.panelBFS.TabIndex = 21;
+            this.panelBFS.Visible = false;
+            // 
+            // BFS_button
+            // 
+            this.BFS_button.Location = new System.Drawing.Point(112, 28);
+            this.BFS_button.Name = "BFS_button";
+            this.BFS_button.Size = new System.Drawing.Size(141, 48);
+            this.BFS_button.TabIndex = 21;
+            this.BFS_button.Text = "Поиск в ширину BFS ";
+            this.BFS_button.UseVisualStyleBackColor = true;
+            this.BFS_button.Click += new System.EventHandler(this.BFS_button_Click);
+            // 
             // DrawGraphForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(964, 664);
+            this.Controls.Add(this.panelBFS);
             this.Controls.Add(this.panelSCC);
-            this.Controls.Add(this.panelFU);
             this.Controls.Add(this.panelDijktra);
             this.Controls.Add(this.panelCycles);
             this.Controls.Add(this.panelDFS);
@@ -381,6 +405,7 @@
             this.panelDijktra.ResumeLayout(false);
             this.panelFU.ResumeLayout(false);
             this.panelSCC.ResumeLayout(false);
+            this.panelBFS.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -416,5 +441,7 @@
         private System.Windows.Forms.Button buttonFU;
         private System.Windows.Forms.Panel panelSCC;
         private System.Windows.Forms.Button buttonSCC;
+        private System.Windows.Forms.Panel panelBFS;
+        private System.Windows.Forms.Button BFS_button;
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BFS
 {
-    public class BFS
+    public class BFSS
     {
         private List<int> distance;
         private List<int> parent;
@@ -15,7 +15,7 @@ namespace BFS
         private int vertexCount;
         private HashSet<int> vertices;
 
-        BFS(int vertexCount)
+       public BFSS(int vertexCount)
         {
             this.vertexCount = vertexCount;
             distance = new List<int>();
@@ -23,18 +23,19 @@ namespace BFS
             colour = new List<string>();
             g = new List<int>[vertexCount];
             vertices = new HashSet<int>();
+            Answer = new List<string>();
             for (int i = 0; i < vertexCount; i++)
                 g[i] = new List<int>();
         }
 
-        private void addEdge(int source, int destination)
+        public void addEdge(int source, int destination)
         {
             g[source].Add(destination);
             vertices.Add(source);
             vertices.Add(destination);
         }
 
-        private string s;
+        public List<string> Answer ;
         private void bfs(int source)
         {
             Queue<int> queue = new Queue<int>();
@@ -44,13 +45,13 @@ namespace BFS
             while (queue.Count > 0)
             {
                 var u = queue.Dequeue();
-                s += (u + " ");
+                Answer.Add("Вершина "+ u + " посещена");
                 for (var j = 0; j < g[u].Count; j++)
                 {
                     if (colour[j] == ("white"))
                     {
                         distance[j] = distance[u] + 1;
-                        parent[j] = u;
+                        parent.Insert(j , u);
                         colour[j] = "grey";
                         queue.Enqueue(j);
                     }
@@ -59,15 +60,14 @@ namespace BFS
             }
         }
 
-        private void doBFS()
+        public void doBFS()
         {
             for (int i = 0; i < vertexCount; i++)
             {
-                distance[i] = 9999;
-                colour[i] = "white";
-
-
-
+                distance.Add(9999);
+                colour.Add("white");
+                parent.Add(000000);
+               
             }
             for (int i = 0; i < vertexCount; i++)
                 if (colour[i] == "white")

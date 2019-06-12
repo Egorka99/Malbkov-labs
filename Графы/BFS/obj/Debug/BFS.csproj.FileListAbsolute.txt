@@ -1,0 +1,6 @@
+C:\GitHub\Malbkov-labs\Графы\BFS\bin\Debug\BFS.dll
+C:\GitHub\Malbkov-labs\Графы\BFS\bin\Debug\BFS.pdb
+C:\GitHub\Malbkov-labs\Графы\BFS\obj\Debug\BFS.csprojResolveAssemblyReference.cache
+C:\GitHub\Malbkov-labs\Графы\BFS\obj\Debug\BFS.csproj.CoreCompileInputs.cache
+C:\GitHub\Malbkov-labs\Графы\BFS\obj\Debug\BFS.dll
+C:\GitHub\Malbkov-labs\Графы\BFS\obj\Debug\BFS.pdb

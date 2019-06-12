@@ -25,8 +25,9 @@ namespace DekstraAlgoritm
         /// Запуск алгоритма расчета
         /// </summary> 
         /// <param name="beginp"></param>
-        public void AlgoritmRun(Point beginp)
+        public void AlgoritmRun()
         {
+            Point beginp = this.points[0];
             if (this.points.Count() == 0 || this.rebra.Count() == 0)
             {
                 throw new DekstraException("Массив вершин или ребер не задан!");
@@ -218,9 +219,9 @@ namespace DekstraAlgoritm
                     string s = string.Empty;
                     foreach (Point p1 in da.MinPath1(p))
                     {
-                        s += string.Format("{0} ", p1.Name);
+                        s += string.Format("--> {0} ", p1.Name);
                     }
-                    retListOfPointsAndPaths.Add(string.Format("Point ={0},MinPath from {1} = {2}", p.Name, da.BeginPoint.Name, s));
+                    retListOfPointsAndPaths.Add(string.Format("Point = {0}, MinPath from {1} {2}", p.Name, da.BeginPoint.Name, s));
                 }
 
             }

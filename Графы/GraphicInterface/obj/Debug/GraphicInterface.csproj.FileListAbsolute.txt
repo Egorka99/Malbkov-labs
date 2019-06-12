@@ -78,3 +78,5 @@ C:\GitHub\Malbkov-labs\Графы\GraphicInterface\obj\Debug\GraphicInterface.cs
 C:\GitHub\Malbkov-labs\Графы\GraphicInterface\obj\Debug\GraphicInterface.csproj.CopyComplete
 C:\GitHub\Malbkov-labs\Графы\GraphicInterface\obj\Debug\GraphicInterface.exe
 C:\GitHub\Malbkov-labs\Графы\GraphicInterface\obj\Debug\GraphicInterface.pdb
+C:\GitHub\Malbkov-labs\Графы\GraphicInterface\bin\Debug\BFS.dll
+C:\GitHub\Malbkov-labs\Графы\GraphicInterface\bin\Debug\BFS.pdb
