@@ -76,3 +76,5 @@ C:\GitHub\Malbkov-labs\ConsoleLabs\ConsoleLabs\bin\Debug\AVLTree.dll
 C:\GitHub\Malbkov-labs\ConsoleLabs\ConsoleLabs\bin\Debug\BTree.dll
 C:\GitHub\Malbkov-labs\ConsoleLabs\ConsoleLabs\bin\Debug\AVLTree.pdb
 C:\GitHub\Malbkov-labs\ConsoleLabs\ConsoleLabs\bin\Debug\BTree.pdb
+D:\Study\MVS Projects\Malbkov-labs\ConsoleLabs\ConsoleLabs\bin\Debug\DekstraAlgoritm.dll
+D:\Study\MVS Projects\Malbkov-labs\ConsoleLabs\ConsoleLabs\bin\Debug\DekstraAlgoritm.pdb

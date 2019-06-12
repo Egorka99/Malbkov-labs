@@ -63,7 +63,7 @@ namespace GraphicInterface
             listBox1.Visible = true;
             textBox1.Visible = false; 
 
-            listBox1.Items.Clear(); 
+            listBox1.Items.Clear();  
  
             graph.PrintAdjacencyMatrix();
 

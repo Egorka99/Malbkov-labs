@@ -234,7 +234,7 @@
             // panelBF
             // 
             this.panelBF.Controls.Add(this.buttonBF);
-            this.panelBF.Location = new System.Drawing.Point(41, 545);
+            this.panelBF.Location = new System.Drawing.Point(122, 96);
             this.panelBF.Name = "panelBF";
             this.panelBF.Size = new System.Drawing.Size(376, 100);
             this.panelBF.TabIndex = 15;
@@ -253,11 +253,12 @@
             // panelDFS
             // 
             this.panelDFS.Controls.Add(this.buttonDFS);
-            this.panelDFS.Location = new System.Drawing.Point(41, 545);
+            this.panelDFS.Location = new System.Drawing.Point(0, 1);
             this.panelDFS.Name = "panelDFS";
             this.panelDFS.Size = new System.Drawing.Size(379, 100);
             this.panelDFS.TabIndex = 16;
             this.panelDFS.Visible = false;
+            this.panelDFS.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelDFS_Paint);
             // 
             // buttonDFS
             // 
@@ -273,7 +274,8 @@
             // 
             this.panelCycles.Controls.Add(this.buttonGamilton);
             this.panelCycles.Controls.Add(this.buttonEuler);
-            this.panelCycles.Location = new System.Drawing.Point(41, 545);
+            this.panelCycles.Controls.Add(this.panelBF);
+            this.panelCycles.Location = new System.Drawing.Point(44, 545);
             this.panelCycles.Name = "panelCycles";
             this.panelCycles.Size = new System.Drawing.Size(379, 100);
             this.panelCycles.TabIndex = 17;
@@ -302,8 +304,7 @@
             // panelDijktra
             // 
             this.panelDijktra.Controls.Add(this.buttonDijkstra);
-            this.panelDijktra.Controls.Add(this.panelFU);
-            this.panelDijktra.Location = new System.Drawing.Point(41, 545);
+            this.panelDijktra.Location = new System.Drawing.Point(44, 545);
             this.panelDijktra.Name = "panelDijktra";
             this.panelDijktra.Size = new System.Drawing.Size(379, 100);
             this.panelDijktra.TabIndex = 18;
@@ -322,7 +323,7 @@
             // panelFU
             // 
             this.panelFU.Controls.Add(this.buttonFU);
-            this.panelFU.Location = new System.Drawing.Point(0, 0);
+            this.panelFU.Location = new System.Drawing.Point(44, 545);
             this.panelFU.Name = "panelFU";
             this.panelFU.Size = new System.Drawing.Size(379, 100);
             this.panelFU.TabIndex = 19;
@@ -341,7 +342,7 @@
             // panelSCC
             // 
             this.panelSCC.Controls.Add(this.buttonSCC);
-            this.panelSCC.Location = new System.Drawing.Point(41, 545);
+            this.panelSCC.Location = new System.Drawing.Point(44, 544);
             this.panelSCC.Name = "panelSCC";
             this.panelSCC.Size = new System.Drawing.Size(379, 100);
             this.panelSCC.TabIndex = 20;
@@ -360,7 +361,8 @@
             // panelBFS
             // 
             this.panelBFS.Controls.Add(this.BFS_button);
-            this.panelBFS.Location = new System.Drawing.Point(41, 545);
+            this.panelBFS.Controls.Add(this.panelDFS);
+            this.panelBFS.Location = new System.Drawing.Point(0, 0);
             this.panelBFS.Name = "panelBFS";
             this.panelBFS.Size = new System.Drawing.Size(379, 100);
             this.panelBFS.TabIndex = 21;
@@ -379,7 +381,8 @@
             // panelMP
             // 
             this.panelMP.Controls.Add(this.buttonMP);
-            this.panelMP.Location = new System.Drawing.Point(41, 545);
+            this.panelMP.Controls.Add(this.panelBFS);
+            this.panelMP.Location = new System.Drawing.Point(44, 544);
             this.panelMP.Name = "panelMP";
             this.panelMP.Size = new System.Drawing.Size(379, 100);
             this.panelMP.TabIndex = 22;
@@ -401,12 +404,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(964, 664);
             this.Controls.Add(this.panelMP);
-            this.Controls.Add(this.panelBFS);
+            this.Controls.Add(this.panelFU);
             this.Controls.Add(this.panelSCC);
             this.Controls.Add(this.panelDijktra);
             this.Controls.Add(this.panelCycles);
-            this.Controls.Add(this.panelDFS);
-            this.Controls.Add(this.panelBF);
             this.Controls.Add(this.panelPrim);
             this.Controls.Add(this.panelKruskal);
             this.Controls.Add(this.label2);

@@ -374,8 +374,8 @@ namespace GraphicInterface
             panelBFS.Visible = false;
             panelMP.Visible = false;
 
-             
-             
+              
+              
         }    
           
         private void ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -396,13 +396,13 @@ namespace GraphicInterface
                     panelBF.Show(); 
                     break;
                 case 3:
-                    panelFU.Show();
-                    break;
+                    panelFU.Show();   
+                    break; 
                 case 4: 
                     panelDFS.Show();
                     break;
                 case 5: 
-                    panelCycles.Show();
+                    panelCycles.Show(); 
                     break;
                 case 6:
                     panelDijktra.Show();
@@ -643,6 +643,11 @@ namespace GraphicInterface
         {
             FormFU form = new FormFU();
             form.Show();
+        }
+
+        private void PanelDFS_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }   
 } 
