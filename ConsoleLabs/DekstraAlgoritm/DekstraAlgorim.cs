@@ -146,8 +146,8 @@ namespace DekstraAlgoritm
             }
 
             return listOfpoints;
-        }
-    }
+        } 
+    } 
 
     /// <summary>
     /// Класс, реализующий ребро

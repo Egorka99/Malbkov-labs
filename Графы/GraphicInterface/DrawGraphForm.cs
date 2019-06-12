@@ -644,11 +644,11 @@ namespace GraphicInterface
             FormFU form = new FormFU();
             form.Show();
         }
-
+         
         private void PanelDFS_Paint(object sender, PaintEventArgs e)
         {
 
         }
-    }   
+    }    
 } 
  
