@@ -215,7 +215,7 @@
             // 
             this.panelKruskal.Controls.Add(this.buttonKruskal);
             this.panelKruskal.Controls.Add(this.button3);
-            this.panelKruskal.Location = new System.Drawing.Point(64, 545);
+            this.panelKruskal.Location = new System.Drawing.Point(63, 549);
             this.panelKruskal.Name = "panelKruskal";
             this.panelKruskal.Size = new System.Drawing.Size(356, 100);
             this.panelKruskal.TabIndex = 13;
@@ -225,18 +225,18 @@
             // 
             this.panelPrim.Controls.Add(this.buttonPrim);
             this.panelPrim.Controls.Add(this.button2);
-            this.panelPrim.Location = new System.Drawing.Point(44, 545);
+            this.panelPrim.Location = new System.Drawing.Point(63, 549);
             this.panelPrim.Name = "panelPrim";
-            this.panelPrim.Size = new System.Drawing.Size(376, 100);
+            this.panelPrim.Size = new System.Drawing.Size(356, 100);
             this.panelPrim.TabIndex = 14;
             this.panelPrim.Visible = false;
             // 
             // panelBF
             // 
             this.panelBF.Controls.Add(this.buttonBF);
-            this.panelBF.Location = new System.Drawing.Point(122, 96);
+            this.panelBF.Location = new System.Drawing.Point(63, 549);
             this.panelBF.Name = "panelBF";
-            this.panelBF.Size = new System.Drawing.Size(376, 100);
+            this.panelBF.Size = new System.Drawing.Size(356, 100);
             this.panelBF.TabIndex = 15;
             this.panelBF.Visible = false;
             // 
@@ -253,9 +253,9 @@
             // panelDFS
             // 
             this.panelDFS.Controls.Add(this.buttonDFS);
-            this.panelDFS.Location = new System.Drawing.Point(0, 1);
+            this.panelDFS.Location = new System.Drawing.Point(63, 549);
             this.panelDFS.Name = "panelDFS";
-            this.panelDFS.Size = new System.Drawing.Size(379, 100);
+            this.panelDFS.Size = new System.Drawing.Size(356, 100);
             this.panelDFS.TabIndex = 16;
             this.panelDFS.Visible = false;
             this.panelDFS.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelDFS_Paint);
@@ -274,10 +274,9 @@
             // 
             this.panelCycles.Controls.Add(this.buttonGamilton);
             this.panelCycles.Controls.Add(this.buttonEuler);
-            this.panelCycles.Controls.Add(this.panelBF);
-            this.panelCycles.Location = new System.Drawing.Point(44, 545);
+            this.panelCycles.Location = new System.Drawing.Point(63, 549);
             this.panelCycles.Name = "panelCycles";
-            this.panelCycles.Size = new System.Drawing.Size(379, 100);
+            this.panelCycles.Size = new System.Drawing.Size(356, 100);
             this.panelCycles.TabIndex = 17;
             this.panelCycles.Visible = false;
             // 
@@ -304,9 +303,9 @@
             // panelDijktra
             // 
             this.panelDijktra.Controls.Add(this.buttonDijkstra);
-            this.panelDijktra.Location = new System.Drawing.Point(44, 545);
+            this.panelDijktra.Location = new System.Drawing.Point(63, 549);
             this.panelDijktra.Name = "panelDijktra";
-            this.panelDijktra.Size = new System.Drawing.Size(379, 100);
+            this.panelDijktra.Size = new System.Drawing.Size(356, 100);
             this.panelDijktra.TabIndex = 18;
             this.panelDijktra.Visible = false;
             // 
@@ -323,15 +322,15 @@
             // panelFU
             // 
             this.panelFU.Controls.Add(this.buttonFU);
-            this.panelFU.Location = new System.Drawing.Point(44, 545);
+            this.panelFU.Location = new System.Drawing.Point(63, 549);
             this.panelFU.Name = "panelFU";
-            this.panelFU.Size = new System.Drawing.Size(379, 100);
+            this.panelFU.Size = new System.Drawing.Size(356, 100);
             this.panelFU.TabIndex = 19;
             this.panelFU.Visible = false;
             // 
             // buttonFU
             // 
-            this.buttonFU.Location = new System.Drawing.Point(112, 25);
+            this.buttonFU.Location = new System.Drawing.Point(105, 22);
             this.buttonFU.Name = "buttonFU";
             this.buttonFU.Size = new System.Drawing.Size(154, 46);
             this.buttonFU.TabIndex = 20;
@@ -342,9 +341,9 @@
             // panelSCC
             // 
             this.panelSCC.Controls.Add(this.buttonSCC);
-            this.panelSCC.Location = new System.Drawing.Point(44, 544);
+            this.panelSCC.Location = new System.Drawing.Point(63, 549);
             this.panelSCC.Name = "panelSCC";
-            this.panelSCC.Size = new System.Drawing.Size(379, 100);
+            this.panelSCC.Size = new System.Drawing.Size(356, 100);
             this.panelSCC.TabIndex = 20;
             this.panelSCC.Visible = false;
             // 
@@ -361,16 +360,15 @@
             // panelBFS
             // 
             this.panelBFS.Controls.Add(this.BFS_button);
-            this.panelBFS.Controls.Add(this.panelDFS);
-            this.panelBFS.Location = new System.Drawing.Point(0, 0);
+            this.panelBFS.Location = new System.Drawing.Point(63, 549);
             this.panelBFS.Name = "panelBFS";
-            this.panelBFS.Size = new System.Drawing.Size(379, 100);
+            this.panelBFS.Size = new System.Drawing.Size(356, 100);
             this.panelBFS.TabIndex = 21;
             this.panelBFS.Visible = false;
             // 
             // BFS_button
             // 
-            this.BFS_button.Location = new System.Drawing.Point(112, 28);
+            this.BFS_button.Location = new System.Drawing.Point(105, 22);
             this.BFS_button.Name = "BFS_button";
             this.BFS_button.Size = new System.Drawing.Size(141, 48);
             this.BFS_button.TabIndex = 21;
@@ -381,16 +379,16 @@
             // panelMP
             // 
             this.panelMP.Controls.Add(this.buttonMP);
-            this.panelMP.Controls.Add(this.panelBFS);
-            this.panelMP.Location = new System.Drawing.Point(44, 544);
+            this.panelMP.Location = new System.Drawing.Point(63, 544);
             this.panelMP.Name = "panelMP";
-            this.panelMP.Size = new System.Drawing.Size(379, 100);
+            this.panelMP.Size = new System.Drawing.Size(368, 108);
             this.panelMP.TabIndex = 22;
             this.panelMP.Visible = false;
+            this.panelMP.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelMP_Paint);
             // 
             // buttonMP
             // 
-            this.buttonMP.Location = new System.Drawing.Point(98, 19);
+            this.buttonMP.Location = new System.Drawing.Point(91, 19);
             this.buttonMP.Name = "buttonMP";
             this.buttonMP.Size = new System.Drawing.Size(168, 58);
             this.buttonMP.TabIndex = 23;
@@ -404,12 +402,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(964, 664);
             this.Controls.Add(this.panelMP);
+            this.Controls.Add(this.panelBFS);
+            this.Controls.Add(this.panelKruskal);
             this.Controls.Add(this.panelFU);
+            this.Controls.Add(this.panelBF);
+            this.Controls.Add(this.panelDFS);
             this.Controls.Add(this.panelSCC);
             this.Controls.Add(this.panelDijktra);
             this.Controls.Add(this.panelCycles);
             this.Controls.Add(this.panelPrim);
-            this.Controls.Add(this.panelKruskal);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.label1);

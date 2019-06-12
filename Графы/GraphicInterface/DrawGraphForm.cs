@@ -388,33 +388,43 @@ namespace GraphicInterface
             {
                 case 0: 
                     panelKruskal.Show(); 
+                    panelKruskal.BringToFront();
                     break;  
-                case 1: 
+                case 1:  
                     panelPrim.Show();
+                    panelPrim.BringToFront();
                     break;
                 case 2: 
                     panelBF.Show(); 
+                    panelBF.BringToFront();
                     break;
                 case 3:
                     panelFU.Show();   
+                    panelFU.BringToFront();
                     break; 
                 case 4: 
                     panelDFS.Show();
+                    panelDFS.BringToFront();
                     break;
                 case 5: 
                     panelCycles.Show(); 
+                    panelCycles.BringToFront();
                     break;
                 case 6:
                     panelDijktra.Show();
+                    panelDijktra.BringToFront();
                     break;
                 case 7: 
                     panelSCC.Show();
+                    panelSCC.BringToFront();
                     break;
                 case 8:
                     panelBFS.Show();
+                    panelBFS.BringToFront();
                     break;
                 case 9:
                     panelMP.Show();
+                    panelMP.BringToFront(); 
                     break;
             }  
                  
@@ -646,6 +656,11 @@ namespace GraphicInterface
         }
          
         private void PanelDFS_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void PanelMP_Paint(object sender, PaintEventArgs e)
         {
 
         }
