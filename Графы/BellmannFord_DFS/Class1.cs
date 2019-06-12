@@ -90,38 +90,54 @@ namespace Labs
         /// <summary>
         /// Обход в глубину с изменением цвета вершин 
         /// </summary>
-        public void doDFS()
+        public void doDFS() 
         {
+            int[,] aMatrix = fillAdjacencyMatrix(); 
 
-            string[] color = new string[V];
+            bool[] visited = new bool[V]; 
              
-            for (int i = 0; i < color.Length; i++) 
-            {
-                color[i] = "white";
+            for (int i = 0; i < visited.Length; i++)  
+            { 
+                visited[i] = false;
             }
 
-            void DFS(int u)
-            {
-                color[u] = "gray";
-                ListInfo.Add("Вершина " + u + " стала серой!"); 
+            void DFS(int st) 
+            { 
+                visited[st] = true; 
+                ListInfo.Add("Вершина " + st + " посещена!"); 
 
                 for (int i = 0; i < V; i++)
                 {
-                    if (color[V - 1] == "white")
+                    if (aMatrix[st,i] != 0  && !visited[st])
                         DFS(V - 1);
                 }
-                color[u] = "black";
-                ListInfo.Add("Вершина " + u + " стала черной!");
-
-            }
+                  
+            }  
 
             for (int i = 0; i < V; i++)
             {
-                if (color[i] == "white")
+                if (!visited[i])
                     DFS(i);
-            }
+            } 
 
         }
+         
+        private int[,] fillAdjacencyMatrix()
+        {
+            int[,] matrix = new int[V,V];
+             
+            for (int i = 0; i < V; i++) 
+                for (int j = 0; j < V; j++)
+                    matrix[i, j] = 0;
+            for (int i = 0; i < edge.Count(); i++) 
+            {
+                matrix[edge[i].src, edge[i].dest] = 1; 
+                matrix[edge[i].dest, edge[i].src] = 1; 
+            }
+
+            return matrix; 
+        } 
+         
         /// <summary>
         /// Топологическая сортировка 
         /// </summary>
