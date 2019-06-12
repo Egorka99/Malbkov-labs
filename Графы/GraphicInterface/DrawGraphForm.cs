@@ -372,9 +372,10 @@ namespace GraphicInterface
             panelFU.Visible = false;
             panelSCC.Visible = false;
             panelBFS.Visible = false;
+            panelMP.Visible = false;
 
-
-
+             
+             
         }    
           
         private void ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -412,11 +413,14 @@ namespace GraphicInterface
                 case 8:
                     panelBFS.Show();
                     break;
+                case 9:
+                    panelMP.Show();
+                    break;
             }  
                  
               
-        }
-
+        } 
+         
         private void ButtonBF_Click(object sender, EventArgs e)
         {
             GraphBF graph = new GraphBF(V.Count,E.Count); //создаем граф для алгоритма Беллмана-Форда 
@@ -627,13 +631,19 @@ namespace GraphicInterface
             {
                 bfs.addEdge(item.v1, item.v2);
             }
-            bfs.doBFS();
-            foreach (var item in bfs.Answer)
+            bfs.doBFS(); 
+            foreach (var item in bfs.Answer) 
             {
                 listBox1.Items.Add(item); 
             }
             
         }
-    }  
+
+        private void ButtonMP_Click(object sender, EventArgs e)
+        {
+            FormFU form = new FormFU();
+            form.Show();
+        }
+    }   
 } 
  

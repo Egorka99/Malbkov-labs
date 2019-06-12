@@ -25,7 +25,6 @@ namespace Labs
         /// </summary>
         public List<string> ListInfo = new List<string>();
 
-        static bool[] visited;
         private static int count = 0; 
 
 
@@ -34,8 +33,8 @@ namespace Labs
             this.AdjacencyMatrix = AdjacencyMatrix;
 
             this.MatrixSize = MatrixSize; 
-             
-        }
+              
+        } 
 
         public Graph(StreamReader F)  
         {
@@ -71,29 +70,104 @@ namespace Labs
             } 
              
             AdjacencyMatrix = A;
-            MatrixSize = N; 
+            MatrixSize = N;  
         }
 
-
-
-    /// <summary>
-    /// Алгоритм поиска сильно связанных компонент
-    /// </summary>
-    /// <param name="matrix">Матрица</param>
-    /// <param name="components">Массив компонент</param>
-    public void Component(ref int[] components)
+         
+        /// <summary>
+        /// Топологическая сортировка 
+        /// </summary> 
+        /// <returns></returns>
+        private List<int> TopSort()
         {
+            List<int> ans = new List<int>(); 
+            bool[] visited = new bool[MatrixSize];
+
+            for (int i = 0; i < visited.Length; i++)
+            { 
+                visited[i] = false; 
+            }
+
+            for (int i = 0; i < MatrixSize; i++)
+            {
+                if (!visited[i])
+                    DFS(i); 
+            } 
+
+            void DFS(int st) 
+            {
+                visited[st] = true;
+
+                for (int i = 0; i < MatrixSize; i++)
+                {
+                    if (AdjacencyMatrix[st, i] != 0 && !visited[i])
+                        DFS(i);
+                }
+                ans.Add(st);
+
+            }
+
+            ans.Reverse();
+
+            return ans; 
+  
+        }
+
+        /// <summary>
+        /// Минимальный путь в бесконтурном графе 
+        /// </summary>
+        /// <param name="src"></param>
+        public void MinPathInAcyclicGraph(int src)
+        {
+            double[] dist = new double[MatrixSize];
              
+            int[] p = TopSort().ToArray(); 
+              
+            for (int i = 0; i < MatrixSize; ++i) 
+                dist[i] = double.PositiveInfinity; 
+            dist[src] = 0; 
+              
+
             for (int i = 0; i < MatrixSize; ++i)
             {
-                if (components[i] == 0) 
-                { 
-                    count++;
-                    Com(i, ref components, count);
-                }
-            }
-            count = 0; 
+                for (int j = 0; j < MatrixSize; j++) 
+                {
+                    if (AdjacencyMatrix[p[i], j] != 0) 
+                    {
+                        dist[j] = Math.Min(dist[j], dist[p[i]] + AdjacencyMatrix[p[i], j]);
+                    }
+                } 
+            } 
+
+            printMinPath(dist, MatrixSize, src);
+
+        }  
+
+        private void printMinPath(double[] dist, int V, int src)
+        {
+            ListInfo.Add("Кратчайшее расстояние от начальной вершины до остальных:");
+            for (int i = 0; i < V; ++i)
+                ListInfo.Add("от " + src + " до " + i + " - " + dist[i]);
         } 
+
+        /// <summary>
+        /// Алгоритм поиска сильно связанных компонент
+        /// </summary>
+        /// <param name="matrix">Матрица</param>
+        /// <param name="components">Массив компонент</param>
+        public void Component(ref int[] components)
+            {
+             
+                for (int i = 0; i < MatrixSize; ++i)
+                {
+                    if (components[i] == 0) 
+                    { 
+                        count++;
+                        Com(i, ref components, count);
+                    }
+                }
+                count = 0; 
+            } 
 
         /// <summary> 
         /// Поиск компонент, сильно связаных с данной
@@ -104,10 +178,12 @@ namespace Labs
         /// <param name="x"></param>
         private void Com(int st, ref int[] components, int x)
         {
-            int n = MatrixSize; 
+            bool[] visited = new bool[MatrixSize]; 
+             
+            int n = MatrixSize;  
             if (components[0] == 0)
-                visited = new bool[n];
-            components[st] = x;
+                visited = new bool[n];         
+            components[st] = x; 
             visited[st] = true;
             for (int r = 0; r < n; r++)
                 if ((AdjacencyMatrix[st, r] != 0) && (!visited[r]))

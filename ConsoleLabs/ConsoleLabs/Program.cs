@@ -11,7 +11,7 @@ namespace ConsoleLabs
 {
     class Program      
     { 
- 
+  
         static void Lab_16()  
         {
             BTree<int, int> T = new BTree<int, int>(2);

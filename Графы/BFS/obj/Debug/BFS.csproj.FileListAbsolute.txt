@@ -4,3 +4,9 @@ C:\GitHub\Malbkov-labs\Графы\BFS\obj\Debug\BFS.csprojResolveAssemblyReferen
 C:\GitHub\Malbkov-labs\Графы\BFS\obj\Debug\BFS.csproj.CoreCompileInputs.cache
 C:\GitHub\Malbkov-labs\Графы\BFS\obj\Debug\BFS.dll
 C:\GitHub\Malbkov-labs\Графы\BFS\obj\Debug\BFS.pdb
+D:\Study\MVS Projects\Malbkov-labs\Графы\BFS\bin\Debug\BFS.dll
+D:\Study\MVS Projects\Malbkov-labs\Графы\BFS\bin\Debug\BFS.pdb
+D:\Study\MVS Projects\Malbkov-labs\Графы\BFS\obj\Debug\BFS.csprojAssemblyReference.cache
+D:\Study\MVS Projects\Malbkov-labs\Графы\BFS\obj\Debug\BFS.csproj.CoreCompileInputs.cache
+D:\Study\MVS Projects\Malbkov-labs\Графы\BFS\obj\Debug\BFS.dll
+D:\Study\MVS Projects\Malbkov-labs\Графы\BFS\obj\Debug\BFS.pdb

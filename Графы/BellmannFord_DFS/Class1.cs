@@ -63,7 +63,7 @@ namespace Labs
         //    // количество вершин = длина вложенного массива 
         //    V = aMatrix.GetLength(0);
 
-        //    // ищем ненулевые элементы матрицы 
+        //    // ищем ненулевые элементы матрицы  
         //    for (int i = 0; i < aMatrix.GetLength(0) ; i++)
         //    {
         //        for (int j = 0; j < aMatrix.GetLength(1) ; j++)

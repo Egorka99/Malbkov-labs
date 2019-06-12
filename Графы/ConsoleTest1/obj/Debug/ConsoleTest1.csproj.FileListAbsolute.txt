@@ -1,0 +1,10 @@
+D:\Study\MVS Projects\Malbkov-labs\Графы\ConsoleTest1\bin\Debug\ConsoleTest1.exe.config
+D:\Study\MVS Projects\Malbkov-labs\Графы\ConsoleTest1\bin\Debug\ConsoleTest1.exe
+D:\Study\MVS Projects\Malbkov-labs\Графы\ConsoleTest1\bin\Debug\ConsoleTest1.pdb
+D:\Study\MVS Projects\Malbkov-labs\Графы\ConsoleTest1\bin\Debug\DFS.dll
+D:\Study\MVS Projects\Malbkov-labs\Графы\ConsoleTest1\bin\Debug\DFS.pdb
+D:\Study\MVS Projects\Malbkov-labs\Графы\ConsoleTest1\obj\Debug\ConsoleTest1.csprojAssemblyReference.cache
+D:\Study\MVS Projects\Malbkov-labs\Графы\ConsoleTest1\obj\Debug\ConsoleTest1.csproj.CoreCompileInputs.cache
+D:\Study\MVS Projects\Malbkov-labs\Графы\ConsoleTest1\obj\Debug\ConsoleTest1.csproj.CopyComplete
+D:\Study\MVS Projects\Malbkov-labs\Графы\ConsoleTest1\obj\Debug\ConsoleTest1.exe
+D:\Study\MVS Projects\Malbkov-labs\Графы\ConsoleTest1\obj\Debug\ConsoleTest1.pdb

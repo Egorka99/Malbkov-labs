@@ -26,11 +26,10 @@ namespace GraphicInterface
         Graph graph; 
             
 
-
         private void ButtonFile_Click(object sender, EventArgs e)
         {
 
-            try
+            try 
             {
                 if (openFileDialog1.ShowDialog() == DialogResult.Cancel)
                     return;
@@ -42,7 +41,9 @@ namespace GraphicInterface
                 buttonFU.Enabled = true;   
                 buttonSCC.Enabled = true;
                  
-                graph = new Graph(sr); 
+                graph = new Graph(sr);
+                 
+                labelError.Text = filename; 
             }    
             catch (IndexOutOfRangeException) 
             {
@@ -54,7 +55,7 @@ namespace GraphicInterface
                 labelError.Text = ex.Message;
                 labelError.ForeColor = Color.Red;
             }
-
+             
         }
 
         private void ButtonFU_Click(object sender, EventArgs e)
@@ -71,16 +72,31 @@ namespace GraphicInterface
             foreach (var item in graph.ListInfo)
             { 
                 listBox1.Items.Add(item); 
-            }
-
-        }    
-            
+            } 
+             
+        }     
         private void ButtonSCC_Click(object sender, EventArgs e)
         {
+
             textBox1.Visible = true; 
             listBox1.Visible = false;
              
             textBox1.Text = graph.SCCToStr(); 
-        } 
+        }
+
+        private void ButtonMP_Click(object sender, EventArgs e)
+        {
+            listBox1.Items.Clear(); 
+
+            listBox1.Visible = true; 
+            textBox1.Visible = false;
+
+            graph.MinPathInAcyclicGraph(0);
+
+            foreach (var item in graph.ListInfo)
+            { 
+                listBox1.Items.Add(item);
+            } 
+        }
     }   
 }   

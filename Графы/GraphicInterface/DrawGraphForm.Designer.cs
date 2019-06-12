@@ -58,6 +58,8 @@
             this.buttonSCC = new System.Windows.Forms.Button();
             this.panelBFS = new System.Windows.Forms.Panel();
             this.BFS_button = new System.Windows.Forms.Button();
+            this.panelMP = new System.Windows.Forms.Panel();
+            this.buttonMP = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.sheet)).BeginInit();
             this.panelKruskal.SuspendLayout();
             this.panelPrim.SuspendLayout();
@@ -68,6 +70,7 @@
             this.panelFU.SuspendLayout();
             this.panelSCC.SuspendLayout();
             this.panelBFS.SuspendLayout();
+            this.panelMP.SuspendLayout();
             this.SuspendLayout();
             // 
             // sheet
@@ -173,7 +176,8 @@
             "Циклы в графах",
             "Алгоритм Дейкстры",
             "Поиск сильно связанных компонент",
-            "Поиск в ширину (BFS)"});
+            "Поиск в ширину (BFS)",
+            "Кратчайшее расстояние в бесконтурном графе"});
             this.comboBox1.Location = new System.Drawing.Point(153, 514);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(244, 21);
@@ -372,11 +376,31 @@
             this.BFS_button.UseVisualStyleBackColor = true;
             this.BFS_button.Click += new System.EventHandler(this.BFS_button_Click);
             // 
+            // panelMP
+            // 
+            this.panelMP.Controls.Add(this.buttonMP);
+            this.panelMP.Location = new System.Drawing.Point(41, 545);
+            this.panelMP.Name = "panelMP";
+            this.panelMP.Size = new System.Drawing.Size(379, 100);
+            this.panelMP.TabIndex = 22;
+            this.panelMP.Visible = false;
+            // 
+            // buttonMP
+            // 
+            this.buttonMP.Location = new System.Drawing.Point(98, 19);
+            this.buttonMP.Name = "buttonMP";
+            this.buttonMP.Size = new System.Drawing.Size(168, 58);
+            this.buttonMP.TabIndex = 23;
+            this.buttonMP.Text = "Кратчайшее расстояние в ациклическом графе";
+            this.buttonMP.UseVisualStyleBackColor = true;
+            this.buttonMP.Click += new System.EventHandler(this.ButtonMP_Click);
+            // 
             // DrawGraphForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(964, 664);
+            this.Controls.Add(this.panelMP);
             this.Controls.Add(this.panelBFS);
             this.Controls.Add(this.panelSCC);
             this.Controls.Add(this.panelDijktra);
@@ -406,6 +430,7 @@
             this.panelFU.ResumeLayout(false);
             this.panelSCC.ResumeLayout(false);
             this.panelBFS.ResumeLayout(false);
+            this.panelMP.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -443,5 +468,7 @@
         private System.Windows.Forms.Button buttonSCC;
         private System.Windows.Forms.Panel panelBFS;
         private System.Windows.Forms.Button BFS_button;
+        private System.Windows.Forms.Panel panelMP;
+        private System.Windows.Forms.Button buttonMP;
     }
 }
