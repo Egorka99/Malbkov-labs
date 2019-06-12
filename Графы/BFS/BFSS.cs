@@ -72,6 +72,8 @@ namespace BFS
             for (int i = 0; i < vertexCount; i++)
                 if (colour[i] == "white")
                     bfs(i);
+
+            Answer.Reverse(); 
         }
 
     }

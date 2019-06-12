@@ -88,39 +88,44 @@ namespace Labs
         }
 
         /// <summary>
-        /// Обход в глубину с изменением цвета вершин 
+        /// Обход в глубину 
         /// </summary>
-        public void doDFS() 
+        public void doDFS()  
         {
             int[,] aMatrix = fillAdjacencyMatrix(); 
 
-            bool[] visited = new bool[V]; 
-             
-            for (int i = 0; i < visited.Length; i++)  
-            { 
+            bool[] visited = new bool[V];
+
+            ListInfo.Add("Порядок обхода: "); 
+
+            for (int i = 0; i < visited.Length; i++)
+            {
                 visited[i] = false;
             }
-
-            void DFS(int st) 
-            { 
-                visited[st] = true; 
-                ListInfo.Add("Вершина " + st + " посещена!"); 
-
-                for (int i = 0; i < V; i++)
-                {
-                    if (aMatrix[st,i] != 0  && !visited[st])
-                        DFS(V - 1);
-                }
-                  
-            }  
 
             for (int i = 0; i < V; i++)
             {
                 if (!visited[i])
-                    DFS(i);
-            } 
+                    DFS(i); 
+            }
 
-        }
+            void DFS(int st)
+            {
+                visited[st] = true;
+                ListInfo.Add(st + " - серая");
+
+                for (int i = 0; i < V; i++)
+                {
+                    if (aMatrix[st, i] != 0 && !visited[i])
+                        DFS(i);
+                }
+                ListInfo.Add(st + " - черная");  
+
+            }
+ 
+             
+
+        } 
          
         private int[,] fillAdjacencyMatrix()
         {
