@@ -54,6 +54,10 @@
       <Project>{57a84cd1-dc28-483a-a687-a98680a433bf}</Project>
       <Name>GraphAlgo</Name>
     </ProjectReference>
+    <ProjectReference Include="..\BellmannFord_DFS\BellmannFord_DFS.csproj">
+      <Project>{8744a63e-45f3-4784-b04c-666a4dde32b2}</Project>
+      <Name>BellmannFord_DFS</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

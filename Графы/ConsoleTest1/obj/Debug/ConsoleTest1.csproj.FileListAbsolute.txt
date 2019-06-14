@@ -8,3 +8,5 @@ D:\Study\MVS Projects\Malbkov-labs\Графы\ConsoleTest1\obj\Debug\ConsoleTest
 D:\Study\MVS Projects\Malbkov-labs\Графы\ConsoleTest1\obj\Debug\ConsoleTest1.csproj.CopyComplete
 D:\Study\MVS Projects\Malbkov-labs\Графы\ConsoleTest1\obj\Debug\ConsoleTest1.exe
 D:\Study\MVS Projects\Malbkov-labs\Графы\ConsoleTest1\obj\Debug\ConsoleTest1.pdb
+D:\Study\MVS Projects\Malbkov-labs\Графы\ConsoleTest1\bin\Debug\BellmannFord_DFS.dll
+D:\Study\MVS Projects\Malbkov-labs\Графы\ConsoleTest1\bin\Debug\BellmannFord_DFS.pdb

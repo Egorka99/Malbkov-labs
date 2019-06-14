@@ -34,8 +34,8 @@ namespace BFS
             vertices.Add(source);
             vertices.Add(destination);
         }
-
-        public List<string> Answer ;
+         
+        public List<string> Answer;
         private void bfs(int source)
         {
             Queue<int> queue = new Queue<int>();
@@ -73,7 +73,6 @@ namespace BFS
                 if (colour[i] == "white")
                     bfs(i);
 
-            Answer.Reverse(); 
         }
 
     }

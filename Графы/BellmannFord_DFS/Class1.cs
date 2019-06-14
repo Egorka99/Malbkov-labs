@@ -54,31 +54,7 @@ namespace Labs
 
         public EdgeBF[] edge;
 
-        // public int[,] aMatrix;  
-
-        //public GraphBF(int[,] aMatrix)
-        //{
-        //    this.aMatrix = aMatrix; 
-
-        //    // количество вершин = длина вложенного массива 
-        //    V = aMatrix.GetLength(0);
-
-        //    // ищем ненулевые элементы матрицы  
-        //    for (int i = 0; i < aMatrix.GetLength(0) ; i++)
-        //    {
-        //        for (int j = 0; j < aMatrix.GetLength(1) ; j++)
-        //        { 
-        //            if (aMatrix[i, j] != 0) 
-        //                E++;   
-        //        }   
-        //    }   
-
-        //    edge = new Edge[E];
-        //    for (int i = 0; i < E; ++i)
-        //        edge[i] = new Edge(); 
-        //}  
-
-        public GraphBF(int v, int e) 
+        public GraphBF(int v, int e)  
         {
             V = v;
             E = e;
@@ -87,6 +63,45 @@ namespace Labs
                 edge[i] = new EdgeBF();
         }
 
+        /// <summary>
+        /// Обход в ширину 
+        /// </summary>
+        /// <param name="src"></param>
+        /// <param name="dest"></param>
+        public void doBFS(int src)
+        {
+            double[] d = new double[V]; // массив с дистанцией для невзешенного графа 
+
+            int[,] aMatrix = fillAdjacencyMatrix();
+
+            for (int i = 0; i < d.Length; i++)
+            { 
+                d[i] = double.PositiveInfinity;
+            }
+
+            d[src] = 0; 
+             
+            Queue<int> Q = new Queue<int>();
+
+            Q.Enqueue(src);
+
+            while (Q.Count != 0)
+            {
+                int u = Q.Dequeue();
+                ListInfo.Add("Вершина " + u + " посещена!");
+
+                for (int i = 0; i < V; i++)
+                {
+                    if (aMatrix[u, i] != 0 && d[i] == double.PositiveInfinity)
+                    {
+                        d[i] = d[u] + 1;
+                        Q.Enqueue(i);
+                    }
+                }
+            }
+
+        }  
+         
         /// <summary>
         /// Обход в глубину 
         /// </summary>
@@ -122,22 +137,21 @@ namespace Labs
                 ListInfo.Add(st + " - черная");  
 
             }
- 
-             
-
+    
         } 
+
          
         private int[,] fillAdjacencyMatrix()
         {
             int[,] matrix = new int[V,V];
              
-            for (int i = 0; i < V; i++) 
+            for (int i = 0; i < V; i++)  
                 for (int j = 0; j < V; j++)
                     matrix[i, j] = 0;
             for (int i = 0; i < edge.Count(); i++) 
             {
-                matrix[edge[i].src, edge[i].dest] = 1; 
-                matrix[edge[i].dest, edge[i].src] = 1; 
+                matrix[edge[i].src, edge[i].dest] = edge[i].weight; 
+                matrix[edge[i].dest, edge[i].src] = edge[i].weight; 
             }
 
             return matrix; 

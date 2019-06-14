@@ -490,6 +490,7 @@ namespace GraphicInterface
             for (int i = 0; i < V.Count; i++) 
                 for (int j = 0; j < V.Count; j++)
                     matrix[i, j] = 0; 
+
             for (int i = 0; i < E.Count; i++) 
             { 
                 matrix[E[i].v1, E[i].v2] = E[i].weight;
@@ -636,17 +637,38 @@ namespace GraphicInterface
 
         private void BFS_button_Click(object sender, EventArgs e)
         {
-            BFSS bfs = new BFSS(V.Count);
+
+            GraphBF graph = new GraphBF(V.Count, E.Count); //создаем граф для алгоритма поиска в глубину 
+
+            //Переносим список ребер из отрисованного графа в граф для поиска в глубину 
+            int i = 0;
             foreach (var item in E)
             {
-                bfs.addEdge(item.v1, item.v2);
-            }
-            bfs.doBFS(); 
-            foreach (var item in bfs.Answer) 
+                graph.edge[i].src = item.v1;
+                graph.edge[i].dest = item.v2;
+                graph.edge[i].weight = item.weight;
+                i++;
+            } 
+             
+            graph.doBFS(0); //выполняем алгоритм  
+
+            // выводим ответ в листбокс   
+            foreach (var item in graph.ListInfo)
             {
-                listBox1.Items.Add(item); 
+                listBox1.Items.Add(item);
             }
-            
+
+            //BFSS bfs = new BFSS(V.Count);
+            //foreach (var item in E)
+            //{
+            //    bfs.addEdge(item.v1, item.v2);
+            //}
+            //bfs.doBFS(); 
+            //foreach (var item in bfs.Answer) 
+            //{
+            //    listBox1.Items.Add(item); 
+            //}
+
         }
 
         private void ButtonMP_Click(object sender, EventArgs e)

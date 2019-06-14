@@ -17,7 +17,7 @@ namespace Labs
         /// <summary>
         /// Размер матрицы 
         /// </summary> 
-        public int MatrixSize;
+        public int MatrixSize; 
 
          
         /// <summary> 
@@ -34,7 +34,7 @@ namespace Labs
 
             this.MatrixSize = MatrixSize; 
               
-        } 
+        }  
 
         public Graph(StreamReader F)  
         {
@@ -45,7 +45,7 @@ namespace Labs
             S = F.ReadLine(); //вывод первой строки 
             N = int.Parse(S);
               
-            int[,] A = new int[N, N]; 
+            int[,] A = new int[N, N];  
 
             if (N < 1 || N > 21) //проверка числа N
             {
@@ -72,6 +72,8 @@ namespace Labs
             AdjacencyMatrix = A;
             MatrixSize = N;  
         }
+
+
 
          
         /// <summary>
