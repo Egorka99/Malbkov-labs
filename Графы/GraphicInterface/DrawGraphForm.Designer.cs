@@ -388,7 +388,7 @@
             // 
             // buttonMP
             // 
-            this.buttonMP.Location = new System.Drawing.Point(90, 28);
+            this.buttonMP.Location = new System.Drawing.Point(78, 28);
             this.buttonMP.Name = "buttonMP";
             this.buttonMP.Size = new System.Drawing.Size(168, 58);
             this.buttonMP.TabIndex = 23;

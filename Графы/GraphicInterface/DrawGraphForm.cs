@@ -101,7 +101,7 @@ namespace GraphicInterface
                 sheet.Image = G.GetBitmap();
             }
         }
-
+         
         private void sheet_MouseClick(object sender, MouseEventArgs e)
         {
            
@@ -149,7 +149,7 @@ namespace GraphicInterface
                 }
                 catch (Exception)
                 {
-                    
+
                 }
                 if (e.Button == MouseButtons.Right)
                 {
@@ -162,7 +162,7 @@ namespace GraphicInterface
                     }
                 }
             }
-            //нажата кнопка "удалить элемент"
+            //нажата кнопка "удалить элемент" 
             if (deleteButton.Enabled == false)
             {
                 bool flag = false; //удалили ли что-нибудь по ЭТОМУ клику
@@ -237,88 +237,99 @@ namespace GraphicInterface
         List<Edge_Prim> MST = new List<Edge_Prim>();
         private void buttonPrim_Click(object sender, EventArgs e)
         {
-            List<Edge_Prim> ListPrim = new List<Edge_Prim>();
-            foreach (var item in E)
-            {
-                ListPrim.Add(new Edge_Prim(item.v1, item.v2, item.weight));
-            }
-            
-            Prim p = new Prim();
-            p.algorithmByPrim(V.Count, ListPrim, MST);
+            try {               
+                List<Edge_Prim> ListPrim = new List<Edge_Prim>();
+                foreach (var item in E)
+                {
+                    ListPrim.Add(new Edge_Prim(item.v1, item.v2, item.weight));
+                }
 
-           
+                Prim p = new Prim();
+                p.algorithmByPrim(V.Count, ListPrim, MST);
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Проверьте введенные данные!", "Ошибка",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
 
         }
 
         private List<Edgee> ListAnswerKruskal = new List<Edgee>();
         private void buttonKruskal_Click(object sender, EventArgs e)
         {
-            List<Edge> ListKruskal = new List<Edge>();
-            foreach (var item in E)
+            try
             {
-              
-              ListKruskal.Add(new Edge(item.v1, item.v2, item.weight));
-                
-            }
-            Kruskal k = new Kruskal(ListKruskal, V.Count, ListKruskal.Count);
-            k.BuildSpanningTree();
+                List<Edge> ListKruskal = new List<Edge>();
 
-           
-            for (int i = 1; i < E.Count; i++)
-            {
-                if (k.tree[i, 1] != k.tree[i, 2])
-                {
-                    ListAnswerKruskal.Add(new Edgee(k.tree[i, 1], k.tree[i, 2], k.tree[i, 3]));
+                if (E.Count == 0)
+                { 
+                    throw new Exception("Ошибка!");
                 }
-            }
 
-            
+                foreach (var item in E)
+                {
 
+                    ListKruskal.Add(new Edge(item.v1, item.v2, item.weight));
+
+                }
+                Kruskal k = new Kruskal(ListKruskal, V.Count, ListKruskal.Count);
+                k.BuildSpanningTree();
+
+
+                for (int i = 1; i < E.Count; i++)
+                {
+                    if (k.tree[i, 1] != k.tree[i, 2])
+                    {
+                        ListAnswerKruskal.Add(new Edgee(k.tree[i, 1], k.tree[i, 2], k.tree[i, 3]));
+                    } 
+                }
+                 
+            }  
+            catch (Exception)
+            {
+                MessageBox.Show("Проверьте введенные данные!", "Ошибка",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            } 
         }
 
         List<Edgee> ListAnswerBr = new List<Edgee>();
-        private void buttonBoruvka_Click(object sender, EventArgs e)
-        {
-            List<Edge_Boruvka> ListBoruvka = new List<Edge_Boruvka>();
-            foreach (var item in E)
-            {
-                ListBoruvka.Add(new Edge_Boruvka(item.v1, item.v2, item.weight));
-            }
-            Boruvka br = new Boruvka(ListBoruvka, V.Count, ListBoruvka.Count);
-            br.boruvkaMST();
 
-           
-            foreach (var item in br.MST)
-            {
-                ListAnswerBr.Add(new Edgee(item.src, item.dest, (int)item.weight));
-            }
-
-            
-
-
-        }
-
-
+ 
         /// <summary>
         /// Prim
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void button2_Click(object sender, EventArgs e)
-        {
-            List<Edgee> ListAnswerPrim = new List<Edgee>();
-            if (MST.Count > 0)
-            {
-                ListAnswerPrim.Add(new Edgee(MST[0].v1, MST[0].v2, MST[0].weight));
-                MST.RemoveAt(0);
-            }
-            else
-            {
-                MessageBox.Show("Решение найдено");
-            }
+        { 
+            try {
+                List<Edgee> ListAnswerPrim = new List<Edgee>();
 
-            G.drawALLGraphAnswer(V, ListAnswerPrim);
-            sheet.Image = G.GetBitmap();
+                if (V.Count == 0)
+                {
+                    throw new Exception("Ошибка!");
+                }
+ 
+                if (MST.Count > 0) 
+                {
+                    ListAnswerPrim.Add(new Edgee(MST[0].v1, MST[0].v2, MST[0].weight));
+                    MST.RemoveAt(0);
+                }
+                else
+                {
+                    MessageBox.Show("Решение найдено");
+                }
+
+                G.drawALLGraphAnswer(V, ListAnswerPrim);
+                sheet.Image = G.GetBitmap();
+            } 
+            catch (Exception)
+            {
+                MessageBox.Show("Проверьте введенные данные!", "Ошибка",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         /// <summary>
@@ -326,39 +337,62 @@ namespace GraphicInterface
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void button3_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e) 
         {
-
-            List<Edgee> ListAnswerKruskal2 = new List<Edgee>();
-            if(ListAnswerKruskal.Count > 0)
+            try
             {
-                ListAnswerKruskal2.Add(new Edgee(ListAnswerKruskal[0].v1, ListAnswerKruskal[0].v2, ListAnswerKruskal[0].weight));
-                ListAnswerKruskal.RemoveAt(0);
+                List<Edgee> ListAnswerKruskal2 = new List<Edgee>();
+
+                if (V.Count == 0)
+                {
+                    throw new Exception("Ошибка!"); 
+                }
+                
+                if (ListAnswerKruskal.Count > 0)
+                {
+                    ListAnswerKruskal2.Add(new Edgee(ListAnswerKruskal[0].v1, ListAnswerKruskal[0].v2, ListAnswerKruskal[0].weight));
+                    ListAnswerKruskal.RemoveAt(0);
+                }
+                else
+                {
+                    MessageBox.Show("Решение найдено");
+                }
+
+                G.drawALLGraphAnswer(V, ListAnswerKruskal2);
+                sheet.Image = G.GetBitmap();
             }
-            else
+            catch (Exception)
             {
-                MessageBox.Show("Решение найдено");
+                MessageBox.Show("Проверьте введенные данные!", "Ошибка",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
-            G.drawALLGraphAnswer(V, ListAnswerKruskal2);
-            sheet.Image = G.GetBitmap();
+
         }
 
- 
+
         private void button4_Click(object sender, EventArgs e)
         {
-            List<Edgee> ListAnswerBr2 = new List<Edgee>();
-            if(ListAnswerBr.Count>0)
-            {
-                ListAnswerBr2.Add(new Edgee(ListAnswerBr[0].v1, ListAnswerBr[0].v2, ListAnswerBr[0].weight));
-                ListAnswerBr.RemoveAt(0);
+            try {
+
+                List<Edgee> ListAnswerBr2 = new List<Edgee>();
+                if (ListAnswerBr.Count > 0)
+                {
+                    ListAnswerBr2.Add(new Edgee(ListAnswerBr[0].v1, ListAnswerBr[0].v2, ListAnswerBr[0].weight));
+                    ListAnswerBr.RemoveAt(0);
+                }
+                else
+                {
+                    MessageBox.Show("Решение найдено");
+                }
+                G.drawALLGraphAnswer(V, ListAnswerBr2);
+                sheet.Image = G.GetBitmap();
             }
-            else
+            catch (Exception) 
             {
-                MessageBox.Show("Решение найдено");
+                MessageBox.Show("Проверьте введенные данные!", "Ошибка",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            G.drawALLGraphAnswer(V, ListAnswerBr2);
-            sheet.Image = G.GetBitmap();
         }
 
         private void AllPanelClose()
@@ -373,10 +407,8 @@ namespace GraphicInterface
             panelSCC.Visible = false;
             panelBFS.Visible = false;
             panelMP.Visible = false;
-
-              
-              
-        }    
+        
+        }     
           
         private void ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -427,112 +459,156 @@ namespace GraphicInterface
                     panelMP.BringToFront(); 
                     break;
             }  
-                 
-              
+        
         } 
          
         private void ButtonBF_Click(object sender, EventArgs e)
         {
-            GraphBF graph = new GraphBF(V.Count,E.Count); //создаем граф для алгоритма Беллмана-Форда 
+            try {
 
-            //Переносим список ребер из отрисованного графа в граф для Беллмана-Форда 
-            int i = 0; 
-            foreach (var item in E)
-            { 
-                graph.edge[i].src = item.v1 ;
-                graph.edge[i].dest = item.v2;
-                graph.edge[i].weight = item.weight;
-                i++;  
-            }  
+                listBox1.Items.Clear();
 
-            graph.BellmanFord(graph,0); //выполняем алгоритм  
+                GraphBF graph = new GraphBF(V.Count, E.Count); //создаем граф для алгоритма Беллмана-Форда 
 
-            // выводим ответ в листбокс 
-            foreach (var item in graph.ListInfo)
+                //Переносим список ребер из отрисованного графа в граф для Беллмана-Форда 
+                int i = 0;
+                foreach (var item in E)
+                {
+                    graph.edge[i].src = item.v1;
+                    graph.edge[i].dest = item.v2;
+                    graph.edge[i].weight = item.weight;
+                    i++;
+                }
+
+                graph.BellmanFord(graph, 0); //выполняем алгоритм  
+
+                // выводим ответ в листбокс 
+                foreach (var item in graph.ListInfo)
+                {
+                    listBox1.Items.Add(item);
+                }
+
+            } 
+            catch (Exception)
             {
-                listBox1.Items.Add(item);
-            }  
+                MessageBox.Show("Проверьте введенные данные!", "Ошибка",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
 
-
-                
         } 
 
         private void ButtonDFS_Click(object sender, EventArgs e)
         {
-            GraphBF graph = new GraphBF(V.Count, E.Count); //создаем граф для алгоритма поиска в глубину 
+            try {
 
-            //Переносим список ребер из отрисованного графа в граф для поиска в глубину 
-            int i = 0;
-            foreach (var item in E)
+                listBox1.Items.Clear();  
+
+                if (V.Count == 0) 
+                    throw new Exception("Ошибка");
+
+                GraphBF graph = new GraphBF(V.Count, E.Count); //создаем граф для алгоритма поиска в глубину 
+
+                //Переносим список ребер из отрисованного графа в граф для поиска в глубину 
+                int i = 0;
+                foreach (var item in E)
+                { 
+                    graph.edge[i].src = item.v1;
+                    graph.edge[i].dest = item.v2;
+                    graph.edge[i].weight = item.weight;
+                    i++;
+                }
+
+                graph.doDFS(); //выполняем алгоритм  
+
+                // выводим ответ в листбокс   
+                foreach (var item in graph.ListInfo) 
+                {
+                    listBox1.Items.Add(item);
+                } 
+            }  
+            catch (Exception)
             {
-                graph.edge[i].src = item.v1; 
-                graph.edge[i].dest = item.v2;
-                graph.edge[i].weight = item.weight;
-                i++; 
+                MessageBox.Show("Проверьте введенные данные!", "Ошибка",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
-            graph.doDFS(); //выполняем алгоритм  
-            
-            // выводим ответ в листбокс   
-            foreach (var item in graph.ListInfo)
-            {
-                listBox1.Items.Add(item);
-            } 
         }
 
           
         private void ButtonEuler_Click(object sender, EventArgs e)
         {
-            bool HasCycle = false;
+            try {
 
-            int[,] matrix = new int[V.Count, V.Count]; 
-             
-            for (int i = 0; i < V.Count; i++) 
-                for (int j = 0; j < V.Count; j++)
-                    matrix[i, j] = 0; 
+                listBox1.Items.Clear();
 
-            for (int i = 0; i < E.Count; i++) 
-            { 
-                matrix[E[i].v1, E[i].v2] = E[i].weight;
-                matrix[E[i].v2, E[i].v1] = E[i].weight;
-            }   
-              
-            HasCycle = Cycles.Euler_cycle(matrix);  
-             
-            if (HasCycle)
-                listBox1.Items.Add("В графе содержится Эйлеров цикл"); 
-            else
+                bool HasCycle = false;
+
+                int[,] matrix = new int[V.Count, V.Count]; 
+
+                for (int i = 0; i < V.Count; i++)
+                    for (int j = 0; j < V.Count; j++)
+                        matrix[i, j] = 0;
+
+                for (int i = 0; i < E.Count; i++)
+                {
+                    matrix[E[i].v1, E[i].v2] = E[i].weight;
+                    matrix[E[i].v2, E[i].v1] = E[i].weight;
+                }
+
+                HasCycle = Cycles.Euler_cycle(matrix);
+
+                if (HasCycle)
+                    listBox1.Items.Add("В графе содержится Эйлеров цикл");
+                else
+                {
+                    listBox1.Items.Add("В графе не содержится Эйлеров цикл");
+                }
+            } 
+            catch (Exception)
             {
-                listBox1.Items.Add("В графе не содержится Эйлеров цикл");
+                MessageBox.Show("Проверьте введенные данные!", "Ошибка",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         } 
 
         private void ButtonGamilton_Click(object sender, EventArgs e)
         {
-            int[] mass; 
+            try {
 
-            int[,] matrix = new int[V.Count, V.Count];
+                listBox1.Items.Clear();
 
-            for (int i = 0; i < V.Count; i++)
-                for (int j = 0; j < V.Count; j++)
-                    matrix[i, j] = 0;
-            for (int i = 0; i < E.Count; i++)
+                int[] mass; 
+
+                int[,] matrix = new int[V.Count, V.Count];
+
+                for (int i = 0; i < V.Count; i++)
+                    for (int j = 0; j < V.Count; j++)
+                        matrix[i, j] = 0;
+                for (int i = 0; i < E.Count; i++)
+                {
+                    matrix[E[i].v1, E[i].v2] = E[i].weight;
+                    matrix[E[i].v2, E[i].v1] = E[i].weight;
+                }
+
+                bool flag = Cycles.HamCycle(matrix, matrix.GetLength(1), out mass);
+                if (flag)
+                {
+                    listBox1.Items.Add("Путь: " + (char)13);
+                    for (int i = 0; i < matrix.GetLength(1); i++)
+                        listBox1.Items.Add(mass[i] + "  ");
+                }
+                else listBox1.Items.Add("Гамильтонов цикл в данном случае невозможен");
+            }        
+            catch (Exception)
             {
-                matrix[E[i].v1, E[i].v2] = E[i].weight;
-                matrix[E[i].v2, E[i].v1] = E[i].weight; 
-            } 
-
-            bool flag = Cycles.HamCycle(matrix, matrix.GetLength(1), out mass);
-            if (flag)
-            { 
-                listBox1.Items.Add("Путь: " + (char)13);
-                for (int i = 0; i < matrix.GetLength(1); i++)
-                    listBox1.Items.Add(mass[i] + "  "); 
+                MessageBox.Show("Проверьте введенные данные!", "Ошибка",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            else listBox1.Items.Add("Гамильтонов цикл в данном случае невозможен");
-
         }
-        /**/
+
+
+
+
         /// <summary>
         /// Метод для нахождения смежных ребер входяшей вершины
         /// </summary>
@@ -541,7 +617,7 @@ namespace GraphicInterface
         /// <returns></returns>
         private List<Edgee> Get_Adjacent_Vertices(int vertice)
         {
-            List<Edgee> Adjacent_Vertices = new List<Edgee>();
+            List<Edgee> Adjacent_Vertices = new List<Edgee>(); 
 
             for (int i = 0; i < E.Count; i++)
             {
@@ -566,62 +642,70 @@ namespace GraphicInterface
                     }
             }
             */
-            return Adjacent_Vertices;
+            return Adjacent_Vertices; 
 
-        }
+        } 
         
 
         private void ButtonDijkstra_Click(object sender, EventArgs e)
-        { 
-            /**/  
-            //делай тута, библа в проекте PS Это был адд
-            DekstraAlgoritm.Point[] v = new DekstraAlgoritm.Point[V.Count];
-            v[0] = new DekstraAlgoritm.Point(0, false, "0");
-            for (int i = 1; i < V.Count; i++)
-            {
-                v[i] = new DekstraAlgoritm.Point(9999, false, Convert.ToString(i));
+        {
+            try {
 
-            }
-           List<Rebro> rebras = new List<Rebro>();
-           
-           for (int i = 0; E.Count > 0; i++)
-            {   
-                 
-                List<Edgee> Adjacent_Vertices = Get_Adjacent_Vertices(Convert.ToInt32(v[i].Name));
-                while( Adjacent_Vertices.Count > 0)
+                listBox1.Items.Clear();
+
+                DekstraAlgoritm.Point[] v = new DekstraAlgoritm.Point[V.Count];
+                v[0] = new DekstraAlgoritm.Point(0, false, "0");
+                for (int i = 1; i < V.Count; i++)
                 {
-                    DekstraAlgoritm.Point temp1 = null , temp2  = null;
-                    for (int f = 0; f < v.Length; f++)
+                    v[i] = new DekstraAlgoritm.Point(9999, false, Convert.ToString(i));
+
+                }
+                List<Rebro> rebras = new List<Rebro>();
+
+                for (int i = 0; E.Count > 0; i++)
+                {
+
+                    List<Edgee> Adjacent_Vertices = Get_Adjacent_Vertices(Convert.ToInt32(v[i].Name));
+                    while (Adjacent_Vertices.Count > 0)
                     {
-                        if (Adjacent_Vertices[0].v1 == Convert.ToInt32(v[f].Name))
+                        DekstraAlgoritm.Point temp1 = null, temp2 = null;
+                        for (int f = 0; f < v.Length; f++)
                         {
-                            temp1 = v[f];
+                            if (Adjacent_Vertices[0].v1 == Convert.ToInt32(v[f].Name))
+                            {
+                                temp1 = v[f];
+
+                            }
+                            if (Adjacent_Vertices[0].v2 == Convert.ToInt32(v[f].Name))
+                            {
+                                temp2 = v[f];
+                            }
+
 
                         }
-                        if (Adjacent_Vertices[0].v2 == Convert.ToInt32(v[f].Name))
-                        {
-                            temp2 = v[f];
-                        }
+                        rebras.Add(new Rebro(temp1, temp2, Adjacent_Vertices[0].weight));
+                        Adjacent_Vertices.RemoveAt(0);
 
 
                     }
-                    rebras.Add (new Rebro(temp1, temp2,Adjacent_Vertices[0].weight));
-                    Adjacent_Vertices.RemoveAt(0);
-                    
-                   
+
                 }
 
+                DekstraAlgorim da = new DekstraAlgorim(v, rebras.ToArray());
+                da.AlgoritmRun();
+                //Тут почему то предок точки нулл , хотя в консольке все ок 
+                List<string> b = PrintGrath.PrintAllMinPaths(da);//ошибка с печатью потом пофикшу
+                for (int i = 0; i < b.Count; i++)                                 // b.Count меняешь на цифру до которого поинта считать (конец)
+                    listBox1.Items.Add(b[i]);
+            }
+            catch(Exception)
+            { 
+                MessageBox.Show("Проверьте введенные данные!", "Ошибка",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error); 
             }
 
-            DekstraAlgorim da = new DekstraAlgorim(v, rebras.ToArray());
-            da.AlgoritmRun();
-            //Тут почему то предок точки нулл , хотя в консольке все ок 
-            List<string> b = PrintGrath.PrintAllMinPaths(da);//ошибка с печатью потом пофикшу
-            for (int i = 0; i < b.Count; i++)                                 // b.Count меняешь на цифру до которого поинта считать (конец)
-                listBox1.Items.Add(b[i]);
-                
 
-        }
+}
 
         private void ButtonFU_Click(object sender, EventArgs e)
         {
@@ -638,36 +722,36 @@ namespace GraphicInterface
         private void BFS_button_Click(object sender, EventArgs e)
         {
 
-            GraphBF graph = new GraphBF(V.Count, E.Count); //создаем граф для алгоритма поиска в глубину 
-
-            //Переносим список ребер из отрисованного графа в граф для поиска в глубину 
-            int i = 0;
-            foreach (var item in E)
+            try
             {
-                graph.edge[i].src = item.v1;
-                graph.edge[i].dest = item.v2;
-                graph.edge[i].weight = item.weight;
-                i++;
-            } 
-             
-            graph.doBFS(0); //выполняем алгоритм  
 
-            // выводим ответ в листбокс   
-            foreach (var item in graph.ListInfo)
-            {
-                listBox1.Items.Add(item);
+                listBox1.Items.Clear();
+
+                GraphBF graph = new GraphBF(V.Count, E.Count); //создаем граф для алгоритма поиска в глубину 
+
+                //Переносим список ребер из отрисованного графа в граф для поиска в глубину 
+                int i = 0;
+                foreach (var item in E) 
+                {
+                    graph.edge[i].src = item.v1;
+                    graph.edge[i].dest = item.v2;
+                    graph.edge[i].weight = item.weight;
+                    i++;
+                }
+
+                graph.doBFS(0); //выполняем алгоритм  
+
+                // выводим ответ в листбокс   
+                foreach (var item in graph.ListInfo)
+                {
+                    listBox1.Items.Add(item); 
+                } 
             }
-
-            //BFSS bfs = new BFSS(V.Count);
-            //foreach (var item in E)
-            //{
-            //    bfs.addEdge(item.v1, item.v2);
-            //}
-            //bfs.doBFS(); 
-            //foreach (var item in bfs.Answer) 
-            //{
-            //    listBox1.Items.Add(item); 
-            //}
+            catch(Exception)
+            {
+                MessageBox.Show("Проверьте введенные данные!", "Ошибка",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error); 
+            }
 
         }
 
@@ -678,7 +762,7 @@ namespace GraphicInterface
         }
          
         private void PanelDFS_Paint(object sender, PaintEventArgs e)
-        {
+        { 
 
         }
 

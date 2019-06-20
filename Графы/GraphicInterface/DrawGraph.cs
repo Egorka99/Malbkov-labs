@@ -109,7 +109,7 @@ namespace GraphicInterface
         {
             //рисуем ребра
             for (int i = 0; i < E.Count; i++)
-            {
+            { 
                 if (E[i].v1 == E[i].v2)
                 {
                     gr.DrawArc(BlackPen, (V[E[i].v1].x - 2 * R), (V[E[i].v1].y - 2 * R), 2 * R, 2 * R, 90, 270);
